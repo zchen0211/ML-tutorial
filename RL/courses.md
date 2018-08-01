@@ -11,3 +11,8 @@
 - Integrating Learning and Planning
 - Exploration and Exploitation
 - Classic Games
+
+## 2. Sergey Levine
+- Introduction
+- Behavior Cloning
+- Introduction to Reinforcement Learning
