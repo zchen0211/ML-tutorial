@@ -1,6 +1,6 @@
 # Reinforcement Learning Courses
 
-## 1. David Silver
+## David Silver
 - Introduction to Reinforcement Learning
 - Markov Decision Process
 - Planning by Dynamic Programming
@@ -12,7 +12,10 @@
 - Exploration and Exploitation
 - Classic Games
 
-## 2. Sergey Levine
+## Sergey Levine
 - Introduction
 - Behavior Cloning
 - Introduction to Reinforcement Learning
+
+## Good Summary
+- Algorithms: https://github.com/tigerneil/awesome-deep-rl
