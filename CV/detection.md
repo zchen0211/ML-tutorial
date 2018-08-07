@@ -13,7 +13,11 @@ Going deeper with convolutions. CVPR, 2015
 network. Arxiv, 1312.4400, 2013.
 
 ## Detection
-- FCN: https://github.com/wkentaro/pytorch-fcn
+- Fast-RCNN:
+	- https://github.com/mahyarnajibi/fast-rcnn-torch
+- FCN:
+	- https://github.com/wkentaro/pytorch-fcn
+	- https://github.com/shelhamer/fcn.berkeleyvision.org
 - Detectron: https://github.com/facebookresearch/Detectron
 - Faster-RCNN: https://github.com/chenyuntc/simple-faster-rcnn-pytorch
 

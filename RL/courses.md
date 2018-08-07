@@ -19,3 +19,7 @@
 
 ## Good Summary
 - Algorithms: https://github.com/tigerneil/awesome-deep-rl
+
+## Books
+- Reinforcement Learning: An Introduction
+	- Assignment: https://github.com/ShangtongZhang/reinforcement-learning-an-introduction

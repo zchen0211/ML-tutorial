@@ -20,3 +20,4 @@
 
 ## Codes
 - One-Shot Visual Imitation Learning via Meta-Learning: https://github.com/tianheyu927/mil
+- Deepak: TensorFlow code for zero-shot visual imitation by self-supervised exploration, ICLR 2018, https://github.com/pathak22/zeroshot-imitation

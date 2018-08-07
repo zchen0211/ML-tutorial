@@ -13,3 +13,6 @@
 ## TTS
 - wavenet: https://github.com/vincentherrmann/pytorch-wavenet
 - wave2letter: https://github.com/facebookresearch/wav2letter
+
+## Libraries
+- torch-text: https://github.com/pytorch/text

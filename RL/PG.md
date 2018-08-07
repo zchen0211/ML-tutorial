@@ -23,3 +23,6 @@ gradient (unrelated to later discussion of guided policy search)
 
 - High-dimensional continuous control with generalized advantage estimation, Schulman et al. ‘16
 - Trust region policy optimization with value function approximation
+
+## Codes
+- Wojciech Zaremba: https://github.com/wojzaremba/trpo
