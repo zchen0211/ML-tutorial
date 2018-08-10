@@ -24,6 +24,8 @@
 	- https://github.com/shaneshixiang/rllabplusplus
 - Berkeley RL:
 	- https://github.com/rll/rllab
+- GA3C:
+	- https://github.com/NVlabs/GA3C
 
 ## Transfer Learning:
 - https://github.com/AI-ON/Multitask-and-Transfer-Learning
