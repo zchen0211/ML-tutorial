@@ -1,5 +1,8 @@
 # Navigation Tasks
 
+## SOA
+- REINFORCEMENT LEARNING WITH UNSUPERVISED AUXILIARY TASKS
+
 ## Codes
 - Yi wu:
 	- https://github.com/jxwuyi/HouseNavAgent

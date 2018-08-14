@@ -1,6 +1,6 @@
 # Reinforcement Learning Courses
 
-## David Silver
+## DeepMind/UCL: David Silver
 - Introduction to Reinforcement Learning
 - Markov Decision Process
 - Planning by Dynamic Programming
@@ -12,13 +12,15 @@
 - Exploration and Exploitation
 - Classic Games
 
-## Sergey Levine
+## Berkeley: Sergey Levine
+- rll.berkeley.edu/deeprlcourse/
 - Introduction
 - Behavior Cloning
 - Introduction to Reinforcement Learning
 
-## Good Summary
+## Good Summaries
 - Algorithms: https://github.com/tigerneil/awesome-deep-rl
+- L. P. Kaelbling, M. L. Littman, and A. W. Moore. Reinforcement learning: A survey. JAIR, 1996.
 
 ## Books
 - Reinforcement Learning: An Introduction
