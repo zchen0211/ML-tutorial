@@ -9,9 +9,6 @@
 ## Structured Prediction
 - Mohanmmad Norouzi
 
-## Teacher
-- Teacher-Student Curriculum Learning, NIPS 2017
-
 ## One Shot
 - Berkeley, One-Shot Imitation from Observing Humans via Domain-Adaptive Meta-Learning
 - Berkeley, One-Shot Visual Imitation Learning via Meta-Learning
