@@ -7,5 +7,4 @@
 - G. Tesauro and G. R. Galperin. On-line policy improvement using monte-carlo search. NIPS, 1996.
 
 ## SOA
-- J. Guo, S. Singh, H. Lee, R. Lewis, and X. Wang. Deep learning for real-time
-atari game play using offline monte-carlo tree search planning. NIPS, 2014.
+- J. Guo, S. Singh, H. Lee, R. Lewis, and X. Wang. Deep learning for real-time atari game play using offline monte-carlo tree search planning. NIPS, 2014.
