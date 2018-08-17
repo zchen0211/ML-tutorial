@@ -1,5 +1,58 @@
 # Strong Baselines
 
+## Policy Gradient
+- Classic
+	- On-Policy
+	- Better Convergence
+	- Effective in high-dimensional or continuous action spaces
+	- Can learn **stochastic** policies
+- Off-Policy
+	- Importance-Sampling
+- Legacy
+	- Williams (1992). Simple statistical gradient-following algorithms for connectionist
+reinforcement learning: introduces REINFORCE algorithm
+	- Baxter & Bartlett (2001). Infinite-horizon policy-gradient estimation: temporally decomposed policy gradient (not the first paper on this! see actor-critic section later)
+	- Peters & Schaal (2008). Reinforcement learning of motor skills with policy gradients: very accessible overview of optimal baselines and natural gradient
+- SOA
+	- Levine & Koltun (2013). Guided policy search: deep RL with importance sampled policy
+gradient (unrelated to later discussion of guided policy search)
+	- Schulman, L., Moritz, Jordan, Abbeel (2015). Trust region policy optimization: deep RL with natural policy gradient and adaptive step size
+		- Theoretical Guarantee of monotonic improvement if KL() constraint satisfied
+		- Surrogate loss
+		- Line search to make the best stepsize update;
+		- Wojciech Zaremba: https://github.com/wojzaremba/trpo
+	- **PPO** Schulman, Wolski, Dhariwal, Radford, Klimov (2017). Proximal policy optimization algorithms: deep RL with importance sampled policy gradient
+	- **GAE**: High-dimensional continuous control with generalized advantage estimation, Schulman et al. ‘16
+	- Trust region policy optimization with value function approximation
+
+## Actor-Critic
+- Classic
+	- Actor: the policy
+	- Critic: value function
+	- Reduce variance of policy gradient
+- Legacy
+	- Sutton, McAllester, Singh, Mansour (1999). Policy gradient methods for reinforcement learning with function approximation: actor-critic algorithms with value function approximation
+- SOA
+	- A3C: Asynchronous methods for deep reinforcement learning (Mnih, Badia, Mirza, Graves, Lillicrap, Harley, Silver, Kavukcuoglu ‘16)
+		- Hogwild
+	- GAE: High dimensional continuous control with generalized advantage estimation (Schulman, Moritz, L., Jordan, Abbeel ‘16)
+	- Q-Prop: sample-efficient policy- gradient with an off-policy critic: policy gradient with Q-function control variate
+	- J. Schulman, P. Moritz, S. Levine, M. Jordan, and P. Abbeel. High-dimensional continuous control using generalized advantage estimation. arxiv, 2015.
+	- D. Silver, G. Lever, N. Heess, T. Degris, D. Wierstra, and M. Riedmiller. Deterministic policy gradient algorithms. ICML, 2014.
+
+## Q-Learning
+- Classic
+	- Off-Policy
+	- Experience Replay
+	- Fixed Q-targets
+- Legacy
+	- C. J. Watkins and P. Dayan. Q-learning. Machine learning, 1992.
+- SOA
+	- Playing Atari with deep reinforcement learning, Mnih et al. ‘13
+	- V. Mnih, K. Kavukcuoglu, D. Silver, A. A. Rusu, J. Veness, M. G. Bellemare, A. Graves, M. Riedmiller, A. K. Fidjeland, G. Ostrovski, S. Petersen, C. Beat- tie, A. Sadik, I. Antonoglou, H. King, D. Kumaran, D. Wierstra, S. Legg, and D. Hassabis. Human level control through deep reinforcement learning. Nature, 2015.
+- Continuous:
+	- DDPG: https://github.com/ghliu/pytorch-ddpg
+
 ## Baselines
 - Open-AI Baselines
 	- https://github.com/openai/baselines
