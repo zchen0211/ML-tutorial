@@ -35,12 +35,11 @@ gradient (unrelated to later discussion of guided policy search)
 - SOA
 	- A3C: Asynchronous methods for deep reinforcement learning (Mnih, Badia, Mirza, Graves, Lillicrap, Harley, Silver, Kavukcuoglu ‘16)
 		- Hogwild
-	- GAE: High dimensional continuous control with generalized advantage estimation (Schulman, Moritz, L., Jordan, Abbeel ‘16)
+	- **GAE**: High dimensional continuous control with generalized advantage estimation (Schulman, Moritz, L., Jordan, Abbeel ‘16)
 	- Q-Prop: sample-efficient policy- gradient with an off-policy critic: policy gradient with Q-function control variate
-	- J. Schulman, P. Moritz, S. Levine, M. Jordan, and P. Abbeel. High-dimensional continuous control using generalized advantage estimation. arxiv, 2015.
 	- D. Silver, G. Lever, N. Heess, T. Degris, D. Wierstra, and M. Riedmiller. Deterministic policy gradient algorithms. ICML, 2014.
 
-## Q-Learning
+## Value Function
 - Classic
 	- Off-Policy
 	- Experience Replay
@@ -48,10 +47,10 @@ gradient (unrelated to later discussion of guided policy search)
 - Legacy
 	- C. J. Watkins and P. Dayan. Q-learning. Machine learning, 1992.
 - SOA
-	- Playing Atari with deep reinforcement learning, Mnih et al. ‘13
-	- V. Mnih, K. Kavukcuoglu, D. Silver, A. A. Rusu, J. Veness, M. G. Bellemare, A. Graves, M. Riedmiller, A. K. Fidjeland, G. Ostrovski, S. Petersen, C. Beat- tie, A. Sadik, I. Antonoglou, H. King, D. Kumaran, D. Wierstra, S. Legg, and D. Hassabis. Human level control through deep reinforcement learning. Nature, 2015.
+	- **DQN** Playing Atari with deep reinforcement learning, Mnih et al. ‘13
+	- **DQN** V. Mnih, et.al. Human level control through deep reinforcement learning. Nature, 2015.
 - Continuous:
-	- DDPG: https://github.com/ghliu/pytorch-ddpg
+	- **DDPG**: https://github.com/ghliu/pytorch-ddpg
 
 ## Baselines
 - Open-AI Baselines
