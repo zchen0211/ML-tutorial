@@ -27,7 +27,16 @@
 	- D. Silver, G. Lever, N. Heess, T. Degris, D. Wierstra, and M. Riedmiller. Deter- ministic policy gradient algorithms. ICML, 2014.
 	- D. Silver, Temporal-Difference Search in Computer Go, 2012
 
-# Texas Hod'em
-- Noam Brown, Tuomas Sandholm. Safe and Nested Subgame Solving for Imperfect-Information Games
-- Noam Brown, Tuomas Sandholm. Libratus: The Superhuman AI for No-Limit Poker, IJCAI 2017
-- Noam Brown, Tuomas Sandholm. Reduced Space and Faster Convergence in Imperfect-Information Games via Pruning, ICML 2017
+# Poker (Texas Hod'em)
+- Imperfect information Game
+- CFR (Counterfactural Regret Minimization)
+	- Zinkevich, M., Johanson, M., Bowling, M., & Piccione, C. Regret minimization in games with incomplete information, NIPS 2008
+	- Lanctot, M., Waugh, K., Zinkevich, M., & Bowling, M, Monte Carlo sampling for regret minimization in extensive games, NIPS 2009
+	- Johanson, M., Bard, N., Lanctot, M., Gibson, R., & Bowling, M, Efficient Nash equilibrium approximation through Monte Carlo counterfactual regret minimization, 2012
+	- Johanson, M., Waugh, K., Bowling, M., & Zinkevich, M. Accelerating best response calculation in large extensive games, AAAI 2011
+	- Codes: https://github.com/tansey/pycfr
+	- A simple (Rock-Paper-Scissors) codes: https://hackernoon.com/artificial-intelligence-poker-and-regret-part-1-36c78d955720
+- Noam Brown, Tuomas Sandholm. (CMU)
+	- Safe and Nested Subgame Solving for Imperfect-Information Games
+	- Libratus: The Superhuman AI for No-Limit Poker, IJCAI 2017
+	- Reduced Space and Faster Convergence in Imperfect-Information Games via Pruning, ICML 2017
