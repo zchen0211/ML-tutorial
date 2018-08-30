@@ -44,13 +44,18 @@ gradient (unrelated to later discussion of guided policy search)
 	- Off-Policy
 	- Experience Replay
 	- Fixed Q-targets
+	- Multi-Step Returns
 - Legacy
 	- C. J. Watkins and P. Dayan. Q-learning. Machine learning, 1992.
 - SOA
 	- **DQN** Playing Atari with deep reinforcement learning, Mnih et al. ‘13
 	- **DQN** V. Mnih, et.al. Human level control through deep reinforcement learning. Nature, 2015.
+	- **Double Q-Learning**
+		- Two network, one to choose action, the other to compute Q(s,a)
 - Continuous:
-	- **DDPG**: https://github.com/ghliu/pytorch-ddpg
+	- **DDPG** ICLR 2016: https://github.com/ghliu/pytorch-ddpg
+		- Q(s, a)
+		- Another network to choose action mu(s)=argmax_a Q(s,a)
 
 ## Baselines
 - Open-AI Baselines
