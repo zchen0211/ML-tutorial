@@ -27,6 +27,9 @@
 	- D. Silver, G. Lever, N. Heess, T. Degris, D. Wierstra, and M. Riedmiller. Deterministic policy gradient algorithms. ICML, 2014.
 	- D. Silver, Temporal-Difference Search in Computer Go, 2012
 
+# Gammon
+- Gerald Tesauro. Temporal difference learning and td-gammon. Communications of the ACM, 38(3):58–68, 1995.
+
 # Poker (Texas Hod'em)
 - Imperfect information Game
 - CFR (Counterfactural Regret Minimization)
@@ -40,3 +43,26 @@
 	- Safe and Nested Subgame Solving for Imperfect-Information Games, NIPS 2017
 	- Libratus: The Superhuman AI for No-Limit Poker, IJCAI 2017
 	- Reduced Space and Faster Convergence in Imperfect-Information Games via Pruning, ICML 2017
+
+# Rubik's Cube
+- Basics:
+	- How to solve the rubik’s cube - beginners method. https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/.
+- Mathematics:
+	- Daniel Kunkle and Gene Cooperman. Twenty-six moves suffice for rubik’s cube. ISSAC ’07
+	- Silviu Radu. Rubik’s cube can be solved in 34 quarter turns. http://cubezzz.dyndns.org/drupal/?q=node/view/92, Jul 2007.
+	- Michael Reid. Superflip requires 20 face turns. http://www.math.rwth-aachen.de/~Martin.Schoenert/Cube-Lovers/michael_reid__superflip_requires_20_face_turns.html, Jan 1995.
+	- Tomas Rokicki. Twenty-two moves suffice for rubik’s cubeR . The Mathematical Intelligencer, 32(1):33–40, 2010.
+	- Tomas Rokicki. God’s number is 26 in the quarter-turn metric. http://www.cube20.org/qtm/, Aug 2014
+	- Tomas Rokicki, Herbert Kociemba, Morley Davidson, and John Dethridge. The diameter of the rubik’s cube group is twenty. SIAM Review, 56(4):645–670, 2014.
+	-  Morwen Thistlethwaite. Thistlethwaite’s 52-move algorithm. https://www.jaapsch.net/puzzles/thistle.htm, Jul 1981.
+- Legacy:
+	- Peter Lichodzijewski and Malcolm Heywood. The rubik cube and gp temporal sequence learning: an initial study. In Genetic Programming Theory and Practice VIII, pages 35–54. Springer, 2011.
+-  **Korf**:
+	- Andrew Brown. Rubik’s cube solver. https://github.com/brownan/Rubiks-Cube-Solver, 2017.
+	- Deepening A* search.
+	- Richard E. Korf. Finding optimal solutions to rubik’s cube using pattern databases. AAAI’97/IAAI’97, pages 700–705. AAAI
+- **Kociemba**:
+	-  Two-phase algorithm details. http://kociemba.org/math/imptwophase.htm.
+	- Maxim Tsoy. Kociemba. https://github.com/muodov/kociemba, 2018.
+- Deep-learning:
+	- Robert Brunetto and Otakar Trunda. Deep heuristic-learning in the rubik’s cube domain: an experimental evaluation. 2017.

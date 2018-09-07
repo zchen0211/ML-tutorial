@@ -25,3 +25,4 @@
 ## Books
 - Reinforcement Learning: An Introduction
 	- Assignment: https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
+- Richard Bellman. Dynamic Programming. Princeton University Press, 1957.
