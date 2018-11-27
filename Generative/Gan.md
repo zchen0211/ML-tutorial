@@ -27,23 +27,29 @@ translation with conditional adversarial networks. In CVPR, 2017.
 ## Sequential Generative
 - Rezende, D., Danihelka, I., Gregor, K., Wierstra, D., et al. One-shot generalization in deep generative models. In ICML, 2016.
 - **DRAW**: A Recurrent Neural Network For Image Generation. ICML 2015
+	- https://github.com/ericjang/draw
+	- https://github.com/chenzhaomin123/draw_pytorch
 - **SPRIAL**: Synthesizing Programs for Images using Reinforced Adversarial Learning
 - **sketch-RNN**: Ha, D. and Eck, D. A neural representation of sketch drawings.
 arXiv preprint arXiv:1704.03477, 2017.
+	- https://magenta.tensorflow.org/sketch_rnn
 - Xie, N., Hachiya, H., and Sugiyama, M. Artist agent: A reinforcement learning approach to automatic stroke generation in oriental ink painting. IEICE Transactions on Information and Systems, 2013.
 
 ## Inverse Graphics
 - Jampani, V., Nowozin, S., Loper, M., and Gehler, P. V. The informed sampler: A discriminative approach to bayesian inference in generative computer vision models. CVIU, 2015.
-- Ellis, K., Ritchie, D., Solar-Lezama, A., and Tenenbaum, J. B. Learning to infer graphics programs from handdrawn images. 2017
-- **Picture**: Kulkarni, T. D., Kohli, P., Tenenbaum, J. B., and Mansinghka, V. Picture: A probabilistic programming language for scene perception. In CVPR, 2015a.
-- Kulkarni, T. D., Whitney, W. F., Kohli, P., and Tenenbaum, J. Deep convolutional inverse graphics network. In NIPS, 2015b.
-- Lake, B. M., Salakhutdinov, R., and Tenenbaum, J. B. Human-level concept learning through probabilistic program induction. Science, 2015.
-- Lake, B. M., Ullman, T. D., Tenenbaum, J. B., and Gershman, S. J. Building machines that learn and think like people. Behavioral and Brain Sciences, 40, 2017.
-- Mansinghka, V. K., Kulkarni, T. D., Perov, Y. N., and Tenenbaum, J. Approximate bayesian image interpretation using generative probabilistic graphics programs. In NIPS, 2013
+- MIT
+	- **GPGP**:  Mansinghka, V. K., Kulkarni, T. D., Perov, Y. N., and Tenenbaum, J. Approximate bayesian image interpretation using generative probabilistic graphics programs. In NIPS, 2013
+	- **Picture**: Kulkarni, T. D., Kohli, P., Tenenbaum, J. B., and Mansinghka, V. Picture: A probabilistic programming language for scene perception. In CVPR, 2015a.
+	- **DC-IGN**: Kulkarni, T. D., Whitney, W. F., Kohli, P., and Tenenbaum, J. Deep convolutional inverse graphics network. In NIPS, 2015b.
+	- Ellis, K., Ritchie, D., Solar-Lezama, A., and Tenenbaum, J. B. Learning to infer graphics programs from handdrawn images. 2017
+- **Omniglot**
+	- Lake, B. M., Salakhutdinov, R., and Tenenbaum, J. B. Human-level concept learning through probabilistic program induction. Science, 2015.
+	- Lake, B. M., Ullman, T. D., Tenenbaum, J. B., and Gershman, S. J. Building machines that learn and think like people. Behavioral and Brain Sciences, 40, 2017.
 - Nair, V., Susskind, J., and Hinton, G. E. Analysis-by synthesis by learning to invert generative black boxes. In ICANN, 2008.
 - Tung, H.-Y. F., Harley, A. W., Seto, W., and Fragkiadaki, K. Adversarial inverse graphics networks: Learning 2d-to3d lifting and image-to-image translation from unpaired supervision. In ICCV, 2017.
 - Wu, J., Lu, E., Kohli, P., Freeman, B., and Tenenbaum, J. Learning to see physics via visual de-animation. In NIPS, 2017a.
 - Wu, J., Tenenbaum, J. B., and Kohli, P. Neural scene derendering. In CVPR, 2017b.
+
 ## RL, Imitation Learning
 - Merel, J., Tassa, Y., Srinivasan, S., Lemmon, J., Wang, Z., Wayne, G., and Heess, N. Learning human behaviors from motion capture by adversarial imitation. arXiv preprint arXiv:1707.02201, 2017.
 
