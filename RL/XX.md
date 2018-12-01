@@ -14,6 +14,10 @@
 	- https://github.com/pathak22/noreward-rl
 - Imagination-Augmented Agents for Deep Reinforcement Learning
 
+## Explore-Go
+- Montezuma’s Revenge Solved by Go-Explore, a New Algorithm for Hard-Exploration Problems (Sets Records on Pitfall, Too)
+	- https://eng.uber.com/go-explore/
+
 ## Thompson Sampling
 - An Empirical Evaluation of Thompson Sampling, NIPS 2011
 
