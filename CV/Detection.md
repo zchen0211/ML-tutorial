@@ -8,6 +8,7 @@
 - **NIN** Lin, Min, Chen, Qiang, and Yan, Shuicheng (NIN): Network in network. Arxiv, 1312.4400, 2013.
 
 ## Detection
+- Kaiming He, Ross Girshick, Piotr Dollar. Rethinking ImageNet Pre-training. CVPR 2019
 - Fast-RCNN:
 	- https://github.com/mahyarnajibi/fast-rcnn-torch
 - FCN:
