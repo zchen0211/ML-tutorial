@@ -20,4 +20,4 @@
 - OpenPose: https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
 ## Segmentation
-- **U-Net**, Olaf RonnebergerEmail authorPhilipp FischerThomas Brox: Convolutional Networks for Biomedical Image Segmentation, MICCAI 2015
+- **U-Net**, Olaf Ronneberger, Philipp Fischer, Thomas Brox: Convolutional Networks for Biomedical Image Segmentation, MICCAI 2015
