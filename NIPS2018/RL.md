@@ -45,3 +45,6 @@
 ## Misc
 - Visual Memory for Robust Path Following (Sergey Levine, Jitendra Malik)
 - Fast deep reinforcement learning using online adjustments from the past (DeepMind)
+
+## POMDP
+- **Forward Modeling for Partial Observation Strategy Games - A StarCraft Defogger (FAIR)**

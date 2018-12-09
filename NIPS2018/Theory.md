@@ -2,6 +2,7 @@
 
 ## Capacity
 - Neuronal Capacity (Pierre Baldi)
+- Nearly tight sample complexity bounds for learning mixtures of Gaussians via sample compression schemes
 
 ## Dimensionality
 - On the Dimensionality of Word Embedding (Stanford)
