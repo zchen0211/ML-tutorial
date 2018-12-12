@@ -5,17 +5,20 @@
 - Frank Hutter
 
 ## Device
-- Post: Device Placement with Cross-Entropy Minimization and Proximal Policy Optimization
+- Post: Device Placement with Cross-Entropy Minimization and Proximal Policy Optimization (U Toronto)
+	- Place different OPs on different GPUs
+	- Cross Entropy
+	- RL with PPO
 - Multiple Instance Learning for Efficient Sequential Data Classification on Resource-constrained Devices
 - Learning to Optimize Tensor Programs (Tianqi Chen)
+	- TVM
+	- Program-aware modeling
 
 ## Meta-Learning
-- Bayesian Model-Agnostic Meta-Learning (Yoshua Bengio)
 - Probabilistic Matrix Factorization for Automated Machine Learning
-- **Probabilistic Model-Agnostic Meta-Learning (Chelsea Finn)**
+- MetaGAN: An Adversarial Approach to Few-Shot Learning (Yoshua Bengio)
 
 ## Auto-ML
-- Neural Architecture Search with Bayesian Optimisation and Optimal Transport
 - Transfer Learning with Neural AutoML
 
 ## Few-Shot

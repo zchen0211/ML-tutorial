@@ -35,7 +35,7 @@ prediction. Arxiv, 1705.10823, 2017b.
 - AutoKeras 2018: Efficient Neural Architecture Search with Network Morphism
 
 ## Performance Prediction
-- Eric Xing: Neural architecture search with bayesian optimisation and optimal transport. 2018
+- Eric Xing: Neural architecture search with bayesian optimisation and optimal transport. NIPS 2018
 	- Gaussian Process to predict performance from history
 	- Measure Network distance from graph theory
 	- https://github.com/kirthevasank/nasbot
@@ -55,11 +55,8 @@ prediction. Arxiv, 1705.10823, 2017b.
 	- https://github.com/quark0/darts
 
 ## Legacy
-- D. Floreano, P. Durr, and C. Mattiussi. Neuroevolution: from ¨
-architectures to learning. Evolutionary Intelligence, 1(1):47–
-62, 2008
-- K. Stanley and R. Miikkulainen. Evolving neural networks
-through augmenting topologies. Evolutionary Computation,
+- D. Floreano, P. Durr, and C. Mattiussi. Neuroevolution: from ¨architectures to learning. Evolutionary Intelligence, 1(1):47–62, 2008
+- K. Stanley and R. Miikkulainen. Evolving neural networks through augmenting topologies. Evolutionary Computation,
 10(2):99–127, 2002. 2
 
 ## misc

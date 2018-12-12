@@ -38,6 +38,7 @@
 - **GILBO: One Metric to Measure Them All**
 - **Assessing Generative Models via Precision and Recall**
 - Flexible and accurate inference and learning for deep generative models
+- Deep Generative Models with Learnable Knowledge Constraints
 
 ## Video
 - Video-to-Video Synthesis
@@ -51,6 +52,3 @@
 - Size-Noise Tradeoffs in Generative Networks
 - Modern Neural Networks Generalize on Small Data Sets
 - **Bias and Generalization in Deep Generative Models: An Empirical Study** (Stanford)
-
-## Program Synthesis
-- Probabilistic Neural Programmed Networks for Scene Generation (Greg Mori)

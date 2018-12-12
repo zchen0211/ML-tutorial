@@ -15,6 +15,7 @@
 - DeepProbLog: Neural Probabilistic Logic Programming
 - **Improving Neural Program Synthesis with Inferred Execution Traces (Dawn Song)**
 - Learning Loop Invariants for Program Verification
+- **Automatic Program Synthesis of Long Programs with a Learned Garbage Collector (FAIR)**
 
 ## Vision
 - 3D-PRNN:

@@ -45,7 +45,6 @@
 - Reward learning from human preferences and demonstrations in Atari
 - Learning Task Specifications from Demonstrations
 - Teaching Inverse Reinforcement Learners via Features and Demonstrations
-- Learning Task Specifications from Demonstrations
 - Lifelong Inverse Reinforcement Learning
 
 ## HRL

@@ -40,6 +40,7 @@
 - Stochastic Cubic Regularization for Fast Nonconvex Optimization (M. Jordan)
 - Variance Reduction:
 	- Stochastic Nested Variance Reduced Gradient Descent for Nonconvex Optimization (UCLA)
+	- SEGA: Variance Reduction via Gradient Sketching
 - Natasha 2: Faster Non-Convex Optimization Than SGD
 - Stochastic Expectation Maximization with Variance Reduction
 - Adversarially Robust Optimization with Gaussian Processes
@@ -47,6 +48,7 @@
 - Langevin
 	- Mirrored Langevin Dynamics
 	- The promises and pitfalls of Stochastic Gradient Langevin Dynamics
+- On Markov Chain Gradient Descent (Wotao Yin)
 
 ## Loss
 - Visualizing the Loss Landscape of Neural Nets

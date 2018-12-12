@@ -1,7 +1,6 @@
 # Bayes
 
 ## Variational
-- ELBO: Variational inference: A review for statisticians. (David Blei, 2017)
 - DropMax: Adaptive Variational Softmax
 - Latent Alignment and Variational Attention
 - Topic Modeling
@@ -22,6 +21,9 @@
 - Boosting Black Box Variational Inference
 - Using Large Ensembles of Control Variates for Variational Inference
 - Streamlining Variational Inference for Constraint Satisfaction Problems
+- Importance Weighting and Variational Inference
+- Orthogonally Decoupled Variational Gaussian Processes
+- Improving Explorability in Variational Inference with Annealed Variational Objectives
 
 ## EM
 - Theoretical guarantees for EM under misspecified Gaussian mixture models
