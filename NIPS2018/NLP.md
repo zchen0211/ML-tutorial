@@ -5,6 +5,7 @@
 
 ## Text Generation
 - **Content preserving text generation with attribute controls (Samy Bengio)**
+- Deep State Space Models for Unconditional Word Generation
 
 ## Comprehension
 - Densely Connected Attention Propagation for Reading Comprehension
@@ -21,6 +22,9 @@
 
 ## TTS
 - Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis (Google Brain)
+
+## Translation
+- Generative Neural Machine Translation
 
 ## Misc
 - e-SNLI: Natural Language Inference with Natural Language Explanations (DeepMind)

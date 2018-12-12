@@ -10,3 +10,8 @@
 ## Physics
 - Flexible neural representation for physics prediction (Fei-Fei Li)
 - End-to-End Differentiable Physics for Learning and Control (Zico Kolter)
+
+## Graph
+- Dynamic Network Model from Partial Observations (Jure Leskovec)
+- Graph Convolutional Policy Network for Goal-Directed Molecular Graph Generation (Jure Leskovec)
+- **Discovery of Latent 3D Keypoints via End-to-end Geometric Reasoning (Google Brain)**

@@ -14,6 +14,8 @@
 - KDGAN: Knowledge Distillation with Generative Adversarial Networks
 - **Text-Adaptive Generative Adversarial Networks: Manipulating Images with Natural Language**
 - **MetaGAN: An Adversarial Approach to Few-Shot Learning**
+- On GANs and GMMs (Yair Weiss)
+- **Learning Plannable Representations with Causal InfoGAN (Pieter Abbeel)**
 
 ## 2D
 - **Glow: Generative Flow with Invertible 1x1 Convolutions (Kingma)**
@@ -26,12 +28,16 @@
 	- Image Inpainting via Generative Multi-column Convolutional Neural Networks (Jiaya Jia)
 - Artistic Style
 	- Unsupervised Learning of Artistic Styles with Archetypal Style Analysis
+- **Image-to-image translation for cross-domain disentanglement (Yoshua Bengio)**
 
 ## Variational
 - Unsupervised Image-to-Image Translation Using Domain-Specific Variational Information Bound
 
 ## Misc
 - Deep Generative Models with Learnable Knowledge Constraints (Erix Xing)
+- **GILBO: One Metric to Measure Them All**
+- **Assessing Generative Models via Precision and Recall**
+- Flexible and accurate inference and learning for deep generative models
 
 ## Video
 - Video-to-Video Synthesis

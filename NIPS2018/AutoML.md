@@ -11,9 +11,12 @@
 
 ## Meta-Learning
 - Bayesian Model-Agnostic Meta-Learning (Yoshua Bengio)
+- Probabilistic Matrix Factorization for Automated Machine Learning
+- **Probabilistic Model-Agnostic Meta-Learning (Chelsea Finn)**
 
 ## Auto-ML
 - Neural Architecture Search with Bayesian Optimisation and Optimal Transport
+- Transfer Learning with Neural AutoML
 
 ## Few-Shot
 - Delta-encoder: an effective sample synthesis method for few-shot object recognition
