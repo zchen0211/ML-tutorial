@@ -3,7 +3,6 @@
 ## Vision
 - 3D-PRNN:
 	- https://github.com/zouchuhang/3D-PRNN
-- **Learning to Infer Graphics Programs from Hand-Drawn Images (MIT)**
 - **Learning Libraries of Subroutines for Neurally–Guided Bayesian Program Induction (MIT)**
 - Probabilistic Neural Programmed Networks for Scene Generation (Greg Mori)
 
@@ -28,7 +27,7 @@ programming. CoRR, abs/1610.09900, 2016.
 	- **GPGP**:  Mansinghka, V. K., Kulkarni, T. D., Perov, Y. N., and Tenenbaum, J. Approximate bayesian image interpretation using generative probabilistic graphics programs. In NIPS, 2013
 	- **Picture**: Kulkarni, T. D., Kohli, P., Tenenbaum, J. B., and Mansinghka, V. Picture: A probabilistic programming language for scene perception. In CVPR, 2015a.
 	- **DC-IGN**: Kulkarni, T. D., Whitney, W. F., Kohli, P., and Tenenbaum, J. Deep convolutional inverse graphics network. In NIPS, 2015b.
-	- Ellis, K., Ritchie, D., Solar-Lezama, A., and Tenenbaum, J. B. Learning to infer graphics programs from handdrawn images. 2017
+	- **Learning to Infer Graphics Programs from Hand-Drawn Images (MIT)**
 	- Emilio Parisotto, Abdel rahman Mohamed, Rishabh Singh, Lihong Li, Dengyong Zhou, and Pushmeet
 Kohli. Neuro-symbolic program synthesis. In arXiv, 2016.
 	- Wu, J., Tenenbaum, J. B., and Kohli, P. Neural scene derendering. In CVPR, 2017b.
