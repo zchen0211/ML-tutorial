@@ -13,6 +13,13 @@
 - Chelsea Finn, http://rail.eecs.berkeley.edu/nips_demo.html, MAML on RL
 - Berkeley, One-Shot Imitation from Observing Humans via Domain-Adaptive Meta-Learning
 
+## Hard Atari Games
+- **Playing hard exploration games by watching YouTube (DeepMind)**, NIPS 2018
+	- TDC (Temporal Distance Classification): predict temporal difference given two frames
+	- CMC (Cross-Model Classification)
+	- Cycle GAN (cross domain of different sequences)
+	- Give positive reward in imitation learning if sequences are within some threshold after 16 frames
+
 ## Structured Prediction
 - Mohanmmad Norouzi
 
