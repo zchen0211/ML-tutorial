@@ -8,8 +8,11 @@
 - OpenAI:
 	- Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, and Xi Chen. Improved
 techniques for training gans. NIPS 2016
+		- **Perception Score** as evaluation
 	- Xi Chen, Yan Duan, Rein Houthooft, John Schulman, Ilya Sutskever, and Pieter Abbeel. Infogan:
 Interpretable representation learning by information maximizing generative adversarial nets. NIPS 2016
+- DeepMind:
+	- Andrew Brock, Jeff Donahue, Karen Simonyan. **Large Scale GAN Training for High Fidelity Natural Image Synthesis**, ICLR 2019
 - **Condition-GAN**: Mirza, M. and Osindero, S. Conditional generative adversarial
 nets. arXiv preprint arXiv:1411.1784, 2014.
 - **pix2pix**: Isola, P., Zhu, J.-Y., Zhou, T., and Efros, A. A. Image-to-image translation with conditional adversarial networks. In CVPR, 2017.
@@ -21,6 +24,10 @@ nets. arXiv preprint arXiv:1411.1784, 2014.
 	- Dumoulin, V., Belghazi, I., Poole, B., Lamb, A., Arjovsky, M., Mastropietro, O., and Courville, A. Adversarially learned inference.
 - Domain adaptation:
 	- Ganin, Y. and Lempitsky, V. Unsupervised domain adaptation by backpropagation. ICML 2015
+
+## Variational
+- Sebastian Nowozin, Botond Cseke, and Ryota Tomioka. **f-GAN**: Training generative neural samplers
+using variational divergence minimization. NIPS 2016
 
 ## RL, Imitation Learning
 - Merel, J., Tassa, Y., Srinivasan, S., Lemmon, J., Wang, Z., Wayne, G., and Heess, N. Learning human behaviors from motion capture by adversarial imitation. arXiv preprint arXiv:1707.02201, 2017.
