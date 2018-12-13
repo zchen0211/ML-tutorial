@@ -5,6 +5,9 @@
 	- https://github.com/zouchuhang/3D-PRNN
 - **Learning Libraries of Subroutines for Neurally–Guided Bayesian Program Induction (MIT)**
 - Probabilistic Neural Programmed Networks for Scene Generation (Greg Mori)
+	- Input: text-based programs
+    - Output: rendered images
+    - PNP-Net
 
 ## Recurrent, Sequential, Order-Aware
 - **SPRIAL**: Synthesizing Programs for Images using Reinforced Adversarial Learning
@@ -32,6 +35,7 @@ programming. CoRR, abs/1610.09900, 2016.
 Kohli. Neuro-symbolic program synthesis. In arXiv, 2016.
 	- Wu, J., Tenenbaum, J. B., and Kohli, P. Neural scene derendering. In CVPR, 2017b.
 	- Wu, J., Lu, E., Kohli, P., Freeman, B., and Tenenbaum, J. Learning to see physics via visual de-animation. In NIPS, 2017a.
+	-  3D-Aware Scene Manipulation via Inverse Graphics, NIPS 2018
 - **Omniglot**
 	- Lake, B. M., Salakhutdinov, R., and Tenenbaum, J. B. Human-level concept learning through probabilistic program induction. Science, 2015.
 	- Lake, B. M., Ullman, T. D., Tenenbaum, J. B., and Gershman, S. J. Building machines that learn and think like people. Behavioral and Brain Sciences, 40, 2017.

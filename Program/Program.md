@@ -33,6 +33,9 @@
 - Backpropagation with Callbacks: Foundations for Efficient and Expressive Differentiable Programming
 - Autoconj: Recognizing and Exploiting Conjugacy Without a Domain-Specific Language
 - **Learning Libraries of Subroutines for Neurally–Guided Bayesian Program Induction (MIT)**
+	- DSL (Domain specific language)
+    - Program search: neural network
+    - EC2 (ECC, for Explore/Compress/Compile)
 - Learning Loop Invariants for Program Verification (Le Song)
 - DeepProbLog: Neural Probabilistic Logic Programming
 - **Improving Neural Program Synthesis with Inferred Execution Traces (Dawn Song)**
