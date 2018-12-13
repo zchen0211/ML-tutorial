@@ -39,4 +39,9 @@
 - Learning Loop Invariants for Program Verification (Le Song)
 - DeepProbLog: Neural Probabilistic Logic Programming
 - **Improving Neural Program Synthesis with Inferred Execution Traces (Dawn Song)**
-- Learning Loop Invariants for Program Verification
+- Le Song, Learning Loop Invariants for Program Verification, NIPS 2018
+	- A structured external memory representation which encodes the program; a Graph-Neural-Network;
+	- A multi-step autoregressive model for incremental loop invariant construction; MDP;
+	- An attention component that mimics the varying focus in each step.
+	- Reinforcement learning with A2C;
+	- https://github.com/PL-ML/code2inv
