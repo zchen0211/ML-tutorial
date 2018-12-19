@@ -85,6 +85,7 @@
 	- A Deep Bayesian Policy Reuse Approach Against Non-Stationary Agents
 	- Q-learning with Nearest Neighbors
 	- **Non-delusional Q-learning and value-iteration**
+		- Best paper award
 - Value Function:
 	- Transfer of Value Functions via Variational Methods
 	- Sample-Efficient Reinforcement Learning with Stochastic Ensemble Value Expansion (Honglak Lee)
