@@ -6,3 +6,15 @@
 
 ## Video Prediction
 - J. Oh, X. Guo, H. Lee, R. Lewis, and S.Singh. Action-conditional video prediction using deep networks in atari games. arxiv, 2015.
+
+## Learn a Model
+-  World Model:
+	- DeepMind
+		- Neural Predictive Belief Representations, ICLR 2019
+			- Contrastive-Predictive Coding (CPC)
+		- Representation Learning with Contrastive Predictive Coding (NIPS 2018)
+	- Google Brain:
+		- **Recurrent World Models Facilitate Policy Evolution**， NIPS 2018
+			- VAE for compression and regularization
+			- Predict next step
+			- https://worldmodels.github.io

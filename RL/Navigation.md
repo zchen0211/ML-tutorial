@@ -13,11 +13,6 @@
 		- Alexey Dosovitskiy, Vladlen Koltun
 		- Win the 2nd Vizdoom competition
 
-## World Model:
-- DeepMind: Neural Predictive Belief Representations, ICLR 2019
-	- Contrastive-Predictive Coding (CPC)s
-- DeepMind: Representation Learning with Contrastive Predictive Coding (NIPS 2018)
-- **Recurrent World Models Facilitate Policy Evolution**， NIPS 2018
 
 ## Codes 
 - GA3C:
