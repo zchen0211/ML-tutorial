@@ -1,5 +1,9 @@
 # Program Synthesis
 
+## Bayesian Program Induction
+- MIT
+	- **Learning Libraries of Subroutines for Neurally–Guided Bayesian Program Induction**, NIPS 2018
+
 ## Translation
 - Tree-to-tree Neural Networks for Program Translation (Berkeley), NIPS 2018
 	- Each language to parse tree as IR (intermediate representation);

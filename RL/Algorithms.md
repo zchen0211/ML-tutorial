@@ -25,7 +25,7 @@ gradient (unrelated to later discussion of guided policy search)
 	- **GAE**: High-dimensional continuous control with generalized advantage estimation, Schulman et al. ‘16
 	- Trust region policy optimization with value function approximation
 
-## Actor-Critic
+## Value + Policy, Actor-Critic
 - Classic
 	- Actor: the policy
 	- Critic: value function
@@ -38,6 +38,7 @@ gradient (unrelated to later discussion of guided policy search)
 	- **GAE**: High dimensional continuous control with generalized advantage estimation (Schulman, Moritz, L., Jordan, Abbeel ‘16)
 	- Q-Prop: sample-efficient policy- gradient with an off-policy critic: policy gradient with Q-function control variate
 	- D. Silver, G. Lever, N. Heess, T. Degris, D. Wierstra, and M. Riedmiller. Deterministic policy gradient algorithms. ICML, 2014.
+- **Bridging the gap between value and policy based reinforcement learning**, NIPS 2017
 
 ## Value Function
 - Classic
@@ -52,10 +53,20 @@ gradient (unrelated to later discussion of guided policy search)
 	- **DQN** V. Mnih, et.al. Human level control through deep reinforcement learning. Nature, 2015.
 	- **Double Q-Learning**
 		- Two network, one to choose action, the other to compute Q(s,a)
+	- **Dueling network architectures for deep reinforcement learning**, ICML 2016
+	- **Rainbow**: Combining improvements in deep reinforcement learning, 2017
+	- **Non-delusional Q-learning and value iteration**, NIPS 2018 best paper award:
+		- Delusion: parameter update inconsistent with following policy;
+		- PCVI: Tabular (model-based MDP)
+		- PCQL: Q-learning (model-free)
 - Continuous:
 	- **DDPG** ICLR 2016: https://github.com/ghliu/pytorch-ddpg
 		- Q(s, a)
 		- Another network to choose action mu(s)=argmax_a Q(s,a)
+
+## Safe
+- **DeepMind**:
+	- **Safe and efficient off-policy reinforcement learning**, NIPS 2016
 
 ## Baselines
 - Open-AI Baselines
