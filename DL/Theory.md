@@ -23,3 +23,7 @@
 	- https://github.com/naturomics/CapsNet-Tensorflow
 
 ## Reverse, Invert
+
+## Convergence
+- **FAIR**:
+	- Yann Lecun: Towards Understanding the Role of Over-Parametrization in Generalization of Neural Networks, 2018

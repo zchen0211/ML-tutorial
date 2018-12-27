@@ -44,7 +44,7 @@ speech processing. ICASSP, 2013.
 		- Hyperbolic tangent, HardTanh, ReLU: similar result
 		- Fully 1d-conv
 	- Ronan: End-to-End Speech Recognition From the Raw Waveform, 2018
-
+	- Ronan: To Reverse the Gradient or Not: An Empirical Comparison of Adversarial and Multi-task Learning in Speech Recognition, 2018
 - Eesen: End-to-end speech recognition using deep RNN models and wfst-based decoding. arXiv 2015.
 - The ibm 2015 english conversational telephone speech recognition system.
 
