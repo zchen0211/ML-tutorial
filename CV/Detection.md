@@ -33,10 +33,28 @@
 		- Experiments:
 			- COCO instance segmentation
 			- COCO keypoint
+		- Speed: 5fps
 	- **Detectron**: https://github.com/facebookresearch/Detectron
+	- **Focal Loss**: Tsung-Yi Lin Priya Goyal Ross Girshick Kaiming He Piotr Dollar. Focal Loss for Dense Object Detection. ICCV 2017
+		- Reduce loss for well-classified classess; focus on harder classes;
+		- Foreground/background imbalance;
+- One-stage detector:
+	- SSD:
+		- W. Liu, D. Anguelov, D. Erhan, C. Szegedy, and S. Reed. SSD: Single shot multibox detector. ECCV 2016
+		-  C.-Y. Fu, W. Liu, A. Ranga, A. Tyagi, and A. C. Berg. DSSD: Deconvolutional single shot detector. 2016
+	- YOLO:
+		- J. Redmon, S. Divvala, R. Girshick, and A. Farhadi. You only look once: Unified, real-time object detection. CVPR 2016
+		-  J. Redmon and A. Farhadi. YOLO9000: Better, faster, stronger. CVPR 2017
 - **FCN**:
 	- https://github.com/wkentaro/pytorch-fcn
 	- https://github.com/shelhamer/fcn.berkeleyvision.org
+- Proposals:
+	- **Selective Search**: J. R. Uijlings, K. E. van de Sande, T. Gevers, and A. W. Smeulders. Selective search for object recognition. IJCV 2013
+	- **EdgeBoxes**:  C. L. Zitnick and P. Dollar. Edge boxes: Locating object proposals from edges. ECCV 2014
+	- **DeepMask**:
+		- P. O. Pinheiro, R. Collobert, and P. Dollar. Learning to segment object candidates. NIPS 2015
+		- P. O. Pinheiro, T.-Y. Lin, R. Collobert, and P. Dollar. Learning to refine object segments. ECCV 2016
+	- **RPN**
 
 ## Pose Estimation
 - OpenPose: https://github.com/CMU-Perceptual-Computing-Lab/openpose
