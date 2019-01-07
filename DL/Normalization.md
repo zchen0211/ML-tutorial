@@ -7,3 +7,6 @@
 - Takeru Miyato, Toshiki Kataoka, Masanori Koyama, and Yuichi Yoshida. **Spectral normalization** for generative adversarial networks. In ICLR, 2018.
 - Group Norm
 - **Weight Norm**: Tim Salimans and Diederik Kingma. Weight normalization: A simple reparameterization to accelerate training of deep neural networks. In NIPS, 2016.
+	- w = g * (v / ||v||)
+	- w is scale invariant to v, and the norm is always g
+	- Data-dependent initialization (to make output with invariant scales)
