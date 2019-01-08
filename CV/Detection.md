@@ -1,17 +1,12 @@
-# Classification, Detection
+# Detection, Semantic-Segmentation
 
-## Classification, Network Design
-- **AlexNet** A. Krizhevsky, I. Sutskever, and G. Hinton (AlexNet): ImageNet classification with deep convolutional neural networks. NIPS, 2012.
-- **VGGNet** K. Simonyan and A. Zisserman. Very deep convolutional networks for large-scale image recognition (VGGNet): arXiv:1409.1556, 2014
-- **GoogleNet** C. Szegedy, W. Liu, Y. Jia, P. Sermanet, S. Reed, D. Anguelov, D. Erhan, V. Vanhoucke, and A. Rabinovich (GoogleNet): Going deeper with convolutions. CVPR, 2015
-- **DenseNet**: https://github.com/bamos/densenet.pytorch
-- **NIN** Lin, Min, Chen, Qiang, and Yan, Shuicheng (NIN): Network in network. Arxiv, 1312.4400, 2013.
-- **FAIR**:
-	- Kaiming He, Ross Girshick, Piotr Dollar. Rethinking ImageNet Pre-training. CVPR 2019
+## Benchmarks
+- **COCO**: T.-Y. Lin, M. Maire, S. Belongie, J. Hays, P. Perona, D. Ramanan, P. Dollar, and C. L. Zitnick. Microsoft coco: Common objects in context. ECCV 2014
 
 ## Detection
 - FAIR, previous MSR:
 	- **R-CNN**: R. Girshick, J. Donahue, T. Darrell, and J. Malik. Rich feature hierarchies for accurate object detection and semantic segmentation. CVPR 2014
+	- **SPP**: K. He, X. Zhang, S. Ren, and J. Sun. Spatial pyramid pooling in deep convolutional networks for visual recognition. ECCV 2014
 	- **Fast R-CNN**: R. Girshick. Fast R-CNN. ICCV 2015
 		- RoIPool: faster, better accuracy
 	- **Faster R-CNN**: S. Ren, K. He, R. Girshick, and J. Sun. Faster r-cnn:Towards real-time object detection with region proposal networks. NIPS 2015 
@@ -23,6 +18,7 @@
 			- Regression loss;
 			- Positives: IoU with largest overlap with ground-truth and >.7 with any ground truth;
 		- Stage 2: R-CNN
+	- **R-FCN**: J. Dai, Y. Li, K. He, and J. Sun. R-fcn: Object detection via region-based fully convolutional networks. NIPS 2016
 	- **FPN**: T.-Y. Lin, P. Dollar, R. Girshick, K. He, B. Hariharan, and S. Belongie. Feature pyramid networks for object detection. CVPR 2017.
 	- **Mask R-CNN**: ICCV 2017
 		- ROI-Align (improves mask accuracy by 10%-15%): solved quantization error
@@ -41,11 +37,15 @@
 - One-stage detector:
 	- SSD:
 		- W. Liu, D. Anguelov, D. Erhan, C. Szegedy, and S. Reed. SSD: Single shot multibox detector. ECCV 2016
+			- Improves YOLO by using default bounding boxes
 		-  C.-Y. Fu, W. Liu, A. Ranga, A. Tyagi, and A. C. Berg. DSSD: Deconvolutional single shot detector. 2016
 	- YOLO:
-		- J. Redmon, S. Divvala, R. Girshick, and A. Farhadi. You only look once: Unified, real-time object detection. CVPR 2016
-		-  J. Redmon and A. Farhadi. YOLO9000: Better, faster, stronger. CVPR 2017
-- **FCN**:
+		- **YOLO**: J. Redmon, S. Divvala, R. Girshick, and A. Farhadi. You only look once: Unified, real-time object detection. CVPR 2016
+		- **YOLOv2**: J. Redmon and A. Farhadi. YOLO9000: Better, faster, stronger. CVPR 2017
+			- Multi-scale training
+			- DarkNet-19
+		- **YOLOv3**: J. Redmon and A. Farhadi. Yolov3: An incremental improvement. 2018
+- **FCN**: J. Long, E. Shelhamer, and T. Darrell. Fully convolutional networks for semantic segmentation. CVPR 2015
 	- https://github.com/wkentaro/pytorch-fcn
 	- https://github.com/shelhamer/fcn.berkeleyvision.org
 - Proposals:
@@ -55,6 +55,8 @@
 		- P. O. Pinheiro, R. Collobert, and P. Dollar. Learning to segment object candidates. NIPS 2015
 		- P. O. Pinheiro, T.-Y. Lin, R. Collobert, and P. Dollar. Learning to refine object segments. ECCV 2016
 	- **RPN**
+- **MSRA**:
+	- 
 
 ## Pose Estimation
 - OpenPose: https://github.com/CMU-Perceptual-Computing-Lab/openpose
