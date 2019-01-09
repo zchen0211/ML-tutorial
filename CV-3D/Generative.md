@@ -28,7 +28,15 @@ Kevin Chen Silvio Savarese. 3D-R2N2: A Unified Approach for Single and Multi-vie
 	- Shape prior
 	- https://github.com/mdfirman/voxlets
 - Jiajun Wu. 3D-INN. ECCV 2016
-- S. Tulsiani, H. Su, L. J. Guibas, A. A. Efros, and J. Malik. Learning shape abstractions by assembling volumetric primitives. 2016
+- S. Tulsiani, H. Su, L. J. Guibas, A. A. Efros, and J. Malik. Learning shape abstractions by assembling volumetric primitives. CVPR 2017
+	- Input: voxel; output: mesh parts (triangles);
+	- Each part (z, q, t): z, shape; q rotation; t translation;
+	- Loss design:
+		- Coverage loss: distance of primitives; penalize to confirm O in Pm
+		- Consistency loss:
+	- Variable number of primitives: (z, q, t, p), p binary for existence
+	- REINFORCE; parsimony reward for fewer parts
+	- Experiment: ShapeNet, 32x32x32, ADAM;
 - GRASS: Generative Recursive Autoencoders for Shape Structures. SIGGRAPH 2017
 - Im2Struct: Recovering 3D Shape Structure from a Single RGB Image (2018 CVPR)
 

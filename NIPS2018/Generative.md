@@ -42,7 +42,6 @@
 
 ## Video
 - Video-to-Video Synthesis
-- Sequential Attend, Infer, Repeat: Generative Modelling of Moving Objects (DeepMind)
 
 ## Music
 - **The challenge of realistic music generation: modelling raw audio at scale (DeepMind)**

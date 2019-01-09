@@ -32,9 +32,10 @@ conceptual compression. NIPS 2016.
 	- Step-by-step refine
 - **SPRIAL**: Synthesizing Programs for Images using Reinforced Adversarial Learning
 - **NPI**:  Scott Reed and Nando de Freitas. Neural programmer-interpreters. In ICLR, 2016.
-- **Attend, Infer, Repeat: Fast Scene Understanding with Generative Models**. NIPS 2016
+- **AIR**: Attend, Infer, Repeat: Fast Scene Understanding with Generative Models. NIPS 2016
+	- An RNN to handle multiple-object (variable length)
 - **Neural scene representation and rendering**, Science 2018
-
+- Sequential Attend, Infer, Repeat: Generative Modelling of Moving Objects, NIPS 2018
 
 ## MIT: Compositional, Inverse Graphics
 - **GPGP**:  Mansinghka, V. K., Kulkarni, T. D., Perov, Y. N., and Tenenbaum, J. Approximate bayesian image interpretation using generative probabilistic graphics programs. In NIPS, 2013
