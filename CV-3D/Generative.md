@@ -98,5 +98,22 @@ deep-learned generative models of surfaces. CGF, 34(5):25–38, 2015.
 	- https://github.com/angeladai/cnncomplete
 - SurfNet: Generating 3D shape surfaces using deep residual networks, CVPR 2017
 - **DRC**: Shubham Tulsiani, Tinghui Zhou, Alexei A Efros, and Jitendra Malik. Multi-view supervision for single-view reconstruction via differentiable ray consistency. CVPR 2017
+	- **Voxel**: occupancy map
+	- Input: one or more observation/camera pairs (O, C), camera-pose only required for training;
+	- Event: a ray intersect a voxel, previous voxels are all unoccupied
+	- Cost:
+		- Depth, Foreground mask
+		- Per-ray consistency loss
+	- Experiment:
+		- ShapeNet
+		- PASCAL 3D
+- Christian Hane, Shubham Tulsiani, Jitendra Malik. Hierarchical Surface Prediction for 3D Object Reconstruction. 2017
+	- Input: color, depth, partial volume
+	- Ouptut: voxel
+	- CNN with deep-supervision on different resolution
+	- Most important part: predict layer l+1 based on layer l
+		- Feature Cropping
+		- Upsampling
+		- Output generation
 - Maxim Tatarchenko, Alexey Dosovitskiy, Thomas Brox. Octree Generating Networks:
 Efficient Convolutional Architectures for High-resolution 3D Outputs.
