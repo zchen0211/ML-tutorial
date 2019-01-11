@@ -4,8 +4,15 @@
 - https://github.com/timzhang642/3D-Machine-Learning
 
 ## SOA
-- B. Graham, M. Engelcke, and L. van der Maaten. 3D semantic segmentation with submanifold sparse convolutional
-networks. CVPR 2018
+- Chamfer distance (a strong baseline)
+- B. Graham, M. Engelcke, and L. van der Maaten. 3D semantic segmentation with submanifold sparse convolutional networks. CVPR 2018
+	- SSCN (submanifold sparse Conv Net)
+	- https://github.com/facebookresearch/SparseConvNet
+	- SSCN(m, n, f, s): m input, n output, f filter-size, s stride;
+	- Implementation: a hash table (https://github.com/sparsehash/sparsehash) and a matrix;
+	- **Sparse Voxelized**: applied on Submanifold FCN and U-Nets;
+	- CPU-only;
+	- Experiments: ShapeNet; NYU depth;
 - P. Hermosilla, T. Ritschel, P.-P. Vazquez, A. Vinacua,  and T. Ropinski. Monte carlo convolution for learning
 on non-uniformly sampled point clouds. 2018
 - R. Klokov and V. Lempitsky. Escape from cells: Deep kdnetworks for the recognition of 3D point cloud models. ICCV 2017
@@ -15,7 +22,12 @@ on non-uniformly sampled point clouds. 2018
 - Detection:
 	- **PointNet++**: Deep Hierarchical Feature Learning on Point Sets in a Metric Space, Charles R. Qi, Li Yi, Hao Su, Leonidas J. Guibas, NIPS 2017
 	- **PointNet**: Charles R. Qi, Wei Liu, Chenxia Wu, Hao Su, Leonidas Guibas. Frustum PointNets for 3D Object Detection from RGB-D Data, CVPR 2018
-- H. Su, V. Jampani, D. Sun, S. Maji, E. Kalogerakis, M.-H. Yang, and J. Kautz. SplatNet: Sparse lattice networks for point cloud processing. CVPR 2018
+- **SplatNet**: H. Su, V. Jampani, D. Sun, S. Maji, E. Kalogerakis, M.-H. Yang, and J. Kautz. SplatNet: Sparse lattice networks for point cloud processing. CVPR 2018
+	- Input: point clouds and images; output semantic for each point;
+	- BCL (Bilateral Convolution Layer)
+		- Splat: project onto lattice
+		- Convolve
+		- Slice
 - M. Sung, H. Su, R. Yu, and L. Guibas. Deep functional dictionaries: Learning consistent semantic structures on 3D models from functions. NIPS 2018
 	- Input n points; output:  n x k dictionary;
 	- Structured sparsity;
