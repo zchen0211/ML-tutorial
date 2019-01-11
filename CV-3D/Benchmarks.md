@@ -33,6 +33,9 @@
 - **PartNet**: Kaichun Mo, Shilin Zhu, Angel X. Chang, Li Yi, Subarna Tripathi, Leonidas J. Guibas, Hao Su. PartNet: A Large-scale Benchmark for Fine-grained and Hierarchical Part-level 3D Object Understanding.
 	- https://cs.stanford.edu/~kaichun/partnet/
 	- 573,585 parts, 26,671 3D models, 24 categories
+	- Based on ShapeNet-Core
+	- Hierarchical labeling
+	- Compare 4 SOA
 - X. Puig, K. Ra, M. Boben, J. Li, T. Wang, S. Fidler, and A. Torralba. Virtualhome: Simulating household activities
 via programs. CVPR 2018
 - C. Yan, D. Misra, A. Bennnett, A. Walsman, Y. Bisk, and Y. Artzi. Chalet: Cornell house agent learning environment. 2018

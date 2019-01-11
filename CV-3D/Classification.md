@@ -16,16 +16,22 @@ on non-uniformly sampled point clouds. 2018
 	- **PointNet++**: Deep Hierarchical Feature Learning on Point Sets in a Metric Space, Charles R. Qi, Li Yi, Hao Su, Leonidas J. Guibas, NIPS 2017
 	- **PointNet**: Charles R. Qi, Wei Liu, Chenxia Wu, Hao Su, Leonidas Guibas. Frustum PointNets for 3D Object Detection from RGB-D Data, CVPR 2018
 - H. Su, V. Jampani, D. Sun, S. Maji, E. Kalogerakis, M.-H. Yang, and J. Kautz. SplatNet: Sparse lattice networks for point cloud processing. CVPR 2018
-- M. Sung, H. Su, R. Yu, and L. Guibas. Deep functional dictionaries: Learning consistent semantic structures on 3D
-models from functions. NIPS 2018
+- M. Sung, H. Su, R. Yu, and L. Guibas. Deep functional dictionaries: Learning consistent semantic structures on 3D models from functions. NIPS 2018
+	- Input n points; output:  n x k dictionary;
+	- Structured sparsity;
+	- https://github.com/mhsung/deep-functional-dictionaries
+	- Different deep dictionaries;
+	- Applications with adaptation in co-segmentation, keypoint correspondence, smooth functional approximation (modeled as constraint);
+	- Given an input X, At = A(X; theta) to get basis
+	- Solve x = argmin||At x - f||^2 s.t. C(x)
+	- Update theta = theta - eta * d L(A(X, theta); f, x) / dx
 - P.-S. Wang, Y. Liu, Y.-X. Guo, C.-Y. Sun, and X. Tong. OCNN: Octree-based convolutional neural networks for 3D
 shape analysis. TOG 2017
 - Y. Wang, Y. Sun, Z. Liu, S. E. Sarma, M. M. Bronstein, and J. M. Solomon. Dynamic graph cnn for learning on point
 clouds. 2018
 - X. Wang, B. Zhou, H. Fang, X. Chen, Q. Zhao, and K. Xu. Learning to group and label fine-grained shape components. SIGGRAPH Asia 2018
 - Z. Wang and F. Lu. VoxSegNet: Volumetric CNNs for semantic part segmentation of 3D shapes. 2018
-- Z. Wu, X. Wang, D. Lin, D. Lischinski, D. Cohen-Or, and H. Huang. Structure-aware generative network for 3d-shape
-modeling. 2018
+- Z. Wu, X. Wang, D. Lin, D. Lischinski, D. Cohen-Or, and H. Huang. Structure-aware generative network for 3d-shape modeling. 2018
 - Y. Xu, T. Fan, M. Xu, L. Zeng, and Y. Qiao. SpiderCNN: Deep learning on point sets with parameterized convolutional filters. ECCV 2018
 - L. Yi, H. Su, X. Guo, and L. J. Guibas. SyncSpecCNN: Synchronized spectral CNN for 3D shape segmentation. CVPR 2017
 
@@ -37,8 +43,7 @@ modeling. 2018
 - R. Hu, W. Li, O. Van Kaick, A. Shamir, H. Zhang, and H. Huang. Learning to predict part mobility from a single static snapshot. TOG 2017
 - R. Hu, O. van Kaick, B. Wu, H. Huang, A. Shamir, and H. Zhang. Learning how objects function via co-analysis
 of interactions. TOG 2016
-- R. Hu, Z. Yan, J. Zhang, O. van Kaick, A. Shamir, H. Zhang, and H. Huang. Predictive and generative neural networks
-for object functionality. CGF 2018
+- R. Hu, Z. Yan, J. Zhang, O. van Kaick, A. Shamir, H. Zhang, and H. Huang. Predictive and generative neural networks for object functionality. CGF 2018
 
 ## Understanding, Classification
 - Robotics (grasping, with touch):
