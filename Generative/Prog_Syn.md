@@ -23,8 +23,7 @@ arXiv preprint arXiv:1704.03477, 2017.
 - **DRAW**: A Recurrent Neural Network For Image Generation. ICML 2015
 	- https://github.com/ericjang/draw
 	- https://github.com/chenzhaomin123/draw_pytorch
--  Karol Gregor, Frederic Besse, Danilo Jimenez Rezende, Ivo Danihelka, and Daan Wierstra. Towards
-conceptual compression. NIPS 2016.
+-  Karol Gregor, Frederic Besse, Danilo Jimenez Rezende, Ivo Danihelka, and Daan Wierstra. Towards conceptual compression. NIPS 2016.
 	- Convolutional DRAW.
 	- Two RNN: one encoder, one decoder;
 	- Compression: best reconstruction given budget
@@ -34,6 +33,8 @@ conceptual compression. NIPS 2016.
 - **NPI**:  Scott Reed and Nando de Freitas. Neural programmer-interpreters. In ICLR, 2016.
 - **AIR**: Attend, Infer, Repeat: Fast Scene Understanding with Generative Models. NIPS 2016
 	- An RNN to handle multiple-object (variable length)
+	- Latent variable z to describe if there is new object or not
+	- Monte Carlo sampling
 - **Neural scene representation and rendering**, Science 2018
 - Sequential Attend, Infer, Repeat: Generative Modelling of Moving Objects, NIPS 2018
 
