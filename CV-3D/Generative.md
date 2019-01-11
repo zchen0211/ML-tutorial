@@ -117,3 +117,7 @@ deep-learned generative models of surfaces. CGF, 34(5):25–38, 2015.
 		- Output generation
 - Maxim Tatarchenko, Alexey Dosovitskiy, Thomas Brox. Octree Generating Networks:
 Efficient Convolutional Architectures for High-resolution 3D Outputs.
+
+
+## Shape Editing
+- A. Jain, T. Thormahlen, T. Ritschel, and H.-P. Seidel. Exploring shape variations by 3d-model decomposition and partbased recombination. CGF 2012
