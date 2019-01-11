@@ -4,7 +4,10 @@
 - https://github.com/timzhang642/3D-Machine-Learning
 
 ## SOA
-- Chamfer distance (a strong baseline)
+- **Chamfer distance** (a strong baseline)
+	- Sum of closest point distances
+	- Asymmetric
+	- For Hausdorff distance, simply a distance transform?
 - B. Graham, M. Engelcke, and L. van der Maaten. 3D semantic segmentation with submanifold sparse convolutional networks. CVPR 2018
 	- SSCN (submanifold sparse Conv Net)
 	- https://github.com/facebookresearch/SparseConvNet
@@ -13,9 +16,22 @@
 	- **Sparse Voxelized**: applied on Submanifold FCN and U-Nets;
 	- CPU-only;
 	- Experiments: ShapeNet; NYU depth;
-- P. Hermosilla, T. Ritschel, P.-P. Vazquez, A. Vinacua,  and T. Ropinski. Monte carlo convolution for learning
-on non-uniformly sampled point clouds. 2018
-- R. Klokov and V. Lempitsky. Escape from cells: Deep kdnetworks for the recognition of 3D point cloud models. ICCV 2017
+- P. Hermosilla, T. Ritschel, P.-P. Vazquez, A. Vinacua,  and T. Ropinski. Monte carlo convolution for learning on non-uniformly sampled point clouds. 2018
+	- Point Clouds (generally non-uniform);
+	- Estimate sample density distribution;
+	- https://github.com/viscom-ulm/MCCNN
+- R. Klokov and V. Lempitsky. Escape from cells: Deep Kd-networks for the recognition of 3D point cloud models. ICCV 2017
+	- Point clouds
+	- http://sites.skoltech.ru/compvision/kdnets/
+	- Work with Kd-tree; (top-down, every node split the axis with largest span);
+	- Recursive bottom-up;
+	- Properties:
+		- Layerwise parameter sharing;
+		- Hierarchical representation;
+		- Partial invariance to jitter;
+		- Non-invariance to rotations;
+		- Role of kd-tree structure;
+	- Experiments: MNIST 2D points; ModelNet;
 - T. Le and Y. Duan. PointGrid: A deep network for 3D shape understanding. CVPR 2018
 - J. Li, B. M. Chen, and G. H. Lee. SO-Net: Self-organizing network for point cloud analysis. CVPR 2018
 - Y. Li, R. Bu, M. Sun, and B. Chen. PointCNN: Convolution on X -transformed points. NIPS 2018
