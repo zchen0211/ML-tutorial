@@ -28,8 +28,10 @@ Kevin Chen Silvio Savarese. 3D-R2N2: A Unified Approach for Single and Multi-vie
 	- Shape prior
 	- https://github.com/mdfirman/voxlets
 - Jiajun Wu. 3D-INN. ECCV 2016
+- - **Hao Su Summary**: http://cseweb.ucsd.edu/~haosu/slides/PartInduction.pdf
 - S. Tulsiani, H. Su, L. J. Guibas, A. A. Efros, and J. Malik. Learning shape abstractions by assembling volumetric primitives. CVPR 2017
 	- Input: voxel; output: mesh parts (triangles);
+	- Unsupervised?
 	- Each part (z, q, t): z, shape; q rotation; t translation;
 	- Loss design:
 		- Coverage loss: distance of primitives; penalize to confirm O in Pm
@@ -37,8 +39,20 @@ Kevin Chen Silvio Savarese. 3D-R2N2: A Unified Approach for Single and Multi-vie
 	- Variable number of primitives: (z, q, t, p), p binary for existence
 	- REINFORCE; parsimony reward for fewer parts
 	- Experiment: ShapeNet, 32x32x32, ADAM;
+- M. Sung, H. Su, R. Yu, and L. Guibas. Deep functional dictionaries: Learning consistent semantic structures on 3D models from functions. NIPS 2018
+	- Input n points; output:  n x k dictionary;
+	- Structured sparsity;
+	- https://github.com/mhsung/deep-functional-dictionaries
+	- Different deep dictionaries;
+	- Applications with adaptation in co-segmentation, keypoint correspondence, smooth functional approximation (modeled as constraint);
+	- Given an input X, At = A(X; theta) to get basis
+	- Solve x = argmin||At x - f||^2 s.t. C(x)
+	- Update theta = theta - eta * d L(A(X, theta); f, x) / dx
 - GRASS: Generative Recursive Autoencoders for Shape Structures. SIGGRAPH 2017
 - Im2Struct: Recovering 3D Shape Structure from a Single RGB Image (2018 CVPR)
+- Li Yi, Haibin Huang, Difan Liu, Evangelos Kalogerakis, Hao Su, Leonidas Guibas. Deep Part Induction from Articulated Object Pairs. SIGGRAPH Asia 2018
+	- Deep Matching (Point Net)
+	- Motion Discovery, Part Co-segmentation
 
 ## Reconstruction
 - Warping, Flow:

@@ -72,6 +72,26 @@ clouds. 2018
 - R. Hu, O. van Kaick, B. Wu, H. Huang, A. Shamir, and H. Zhang. Learning how objects function via co-analysis
 of interactions. TOG 2016
 - R. Hu, Z. Yan, J. Zhang, O. van Kaick, A. Shamir, H. Zhang, and H. Huang. Predictive and generative neural networks for object functionality. CGF 2018
+- **Hao Su Summary**: http://cseweb.ucsd.edu/~haosu/slides/PartInduction.pdf
+- **ISIN**: Cewu Lu, Hao Su, Yongyi Lu, Li Yi, Chi-Keung Tang, Leonidas Guibas. Beyond Holistic Object Recognition: Enriching Image Understanding with Part States. CVPR 2018
+	- Objerect Part-State Dataset
+	- Iterative Part-state Inference Network (ISIN)
+
+## Classification
+- Voxel:
+	- **ModelNet**: Z. Wu, S. Song, A. Khosla, F. Yu, L. Zhang, X. Tang and J. Xiao. 3D ShapeNets: A Deep Representation for Volumetric Shapes
+		- Predict next best angle (most uncertain by max entropy diff)
+	- Daniel Maturana and Sebastian Scherer. VoxNet: A 3D Convolutional Neural Network for Real-Time Object Recognition. IROS 2015
+		- https://github.com/dimatura/voxnet
+- 2D images:
+	- Hang Su, Subhransu Maji, Evangelos Kalogerakis, Erik Learned-Miller. Multi-view Convolutional Neural Networks for 3D Shape Recognition. ICCV 2015
+		- https://github.com/jongchyisu/mvcnn_pytorch
+		- Multi-view pooling
+	- DeepPano: Deep Panoramic Representation for 3-D Shape Recognition.
+- Multi-mode:
+	- Vishakh Hegde, Reza Zadeh. FusionNet: 3D Object Classification Using Multiple Data Representations. NIPS 2016
+	- Charles R. Qi, Hao Su, Matthias Nießner Angela Dai Mengyuan Yan Leonidas J. Guibas. Volumetric and Multi-View CNNs for Object Classification on 3D Data. CVPR 2016
+		- https://github.com/charlesq34/<3dcnn class="torch"></3dcnn>
 
 ## Understanding, Classification
 - Robotics (grasping, with touch):
