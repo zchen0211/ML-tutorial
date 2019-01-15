@@ -11,9 +11,18 @@
 
 - Supersizing Self-supervision: Learning to Grasp from 50K Tries and 700 Robot Hours
 
+## OpenAI
+- **Dactyl**: Marcin Andrychowicz et.al. Learning Dexterous In-Hand Manipulation, 2018
+	- https://blog.openai.com/learning-dexterity/
+	- Problem setup: Manipulate objects using a Shaow Dexterous Hand
+	- Distributed workers collect experience at large scale;
+	- Train models:
+		- A LSTM RL to predict action (control policy);
+		- A CNN to predict object pose;
+		- Combine pose estimation and control policy from multiple camera inputs
+
 ## Dataset
 - MuJoCo: A physics engine for model-based control, IROS 2012
 
 ## Legacy
-- L.-J. Lin. Reinforcement learning for robots using neural networks. No. CMU-CS-
-93-103. Carnegie-Mellon Univ Pittsburgh PA School of Computer Science, 1993.
+- L.-J. Lin. Reinforcement learning for robots using neural networks. No. CMU-CS-93-103. Carnegie-Mellon Univ Pittsburgh PA School of Computer Science, 1993.
