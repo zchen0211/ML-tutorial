@@ -1,5 +1,15 @@
 # Hyper Parameter
 
+## Legacy
+- Frank Hutter, Holger H. Hoos, and Kevin Leyton-Brown. Sequential model-based optimization for general algorithm configuration. LION 2005
+
+## Bayesian
+- B. Shahriari, K. Swersky, Z. Wang, R. P. Adams, and N. de Freitas. Taking the human out of the loop: A review of bayesian optimization. 2016
+- Jasper Snoek, Hugo Larochelle, and Ryan P. Adams. Practical bayesian optimization of machine learning algorithms. NIPS 2012
+- Jasper Snoek, Oren Rippel, Kevin Swersky, Ryan Kiros, Nadathur Satish, Narayanan Sundaram, Md. Mostofa Ali Patwary, Prabhat Prabhat, and Ryan P. Adams. Scalable bayesian optimization using deep neural networks. NIPS 2015
+
+## New
+- Frank Hutter, Lin Xu, Holger Hoos, and Kevin Leyton-Brown. Algorithm runtime prediction: Methods and evaluation (extended abstract). IJCAI 2015
 - Tobias Domhan, Jost Tobias Springenberg, Frank Hutter. Speeding up Automatic Hyperparameter Optimization of Deep Neural Networksby Extrapolation of Learning Curves. IJCAI 2015
 	- https://github.com/automl/pylearningcurvepredictor
 - Lisha Li, Kevin Jamieson, Giulia DeSalvo, Afshin Rostamizadeh, Ameet Talwalkar. Hyperband: A Novel Bandit-Based Approach to Hyperparameter Optimization, ICLR 2017
