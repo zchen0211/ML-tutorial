@@ -14,7 +14,7 @@ a Convolutional Network. ECCV 2016
 	- https://github.com/jimeiyang/deepRotator
 - Christopher B. Choy Danfei Xu? JunYoung Gwak?
 Kevin Chen Silvio Savarese. 3D-R2N2: A Unified Approach for Single and Multi-view 3D Object Reconstruction. ECCV 2016
-	- Update model with RNN each time with a new image.
+	- Update model with RNN each time with a new image;
 	- https://github.com/chrischoy/3D-R2N2
 
 ## Template-Based
@@ -48,7 +48,8 @@ Kevin Chen Silvio Savarese. 3D-R2N2: A Unified Approach for Single and Multi-vie
 	- Given an input X, At = A(X; theta) to get basis
 	- Solve x = argmin||At x - f||^2 s.t. C(x)
 	- Update theta = theta - eta * d L(A(X, theta); f, x) / dx
-- GRASS: Generative Recursive Autoencoders for Shape Structures. SIGGRAPH 2017
+- **GRASS**. Jun Li, Kai Xu, Siddhartha Chaudhuri, Ersin Yumer, Hao Zhang, Leonidas Guibas. GRASS: Generative Recursive Autoencoders for Shape Structures. SIGGRAPH 2017
+	- Recursive
 - Im2Struct: Recovering 3D Shape Structure from a Single RGB Image (2018 CVPR)
 - Li Yi, Haibin Huang, Difan Liu, Evangelos Kalogerakis, Hao Su, Leonidas Guibas. Deep Part Induction from Articulated Object Pairs. SIGGRAPH Asia 2018
 	- Deep Matching (Point Net)
