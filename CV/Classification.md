@@ -3,8 +3,26 @@
 ## Classification, Network Design
 - **AlexNet** A. Krizhevsky, I. Sutskever, and G. Hinton (AlexNet): ImageNet classification with deep convolutional neural networks. NIPS, 2012.
 - **VGGNet** K. Simonyan and A. Zisserman. Very deep convolutional networks for large-scale image recognition (VGGNet): arXiv:1409.1556, 2014
-- **GoogleNet** C. Szegedy, W. Liu, Y. Jia, P. Sermanet, S. Reed, D. Anguelov, D. Erhan, V. Vanhoucke, and A. Rabinovich (GoogleNet): Going deeper with convolutions. CVPR, 2015
-- **DenseNet**: https://github.com/bamos/densenet.pytorch
 - **NIN** Lin, Min, Chen, Qiang, and Yan, Shuicheng (NIN): Network in network. Arxiv, 1312.4400, 2013.
 - **FAIR**:
+	- **ResNet**: Deep Residual Learning for Image Recognition. CVPR 2016
+	- **ResNext**: Aggregated Residual Transformations for Deep Neural Networks. CVPR 2017
+		- ImageNet 2nd 2016
+		- **Grouped-Convolution**
+		- i. same spatial size: same hyper-parameter;
+		- ii. down-sample by 2, width increase by 2; (each layer similar computation)
+		- Conv - Batch-Norm - ReLU;
+		- Short-cut: ReLU after adding shortcut;
+	- **DenseNet**: Densely Connected Convolutional Networks. CVPR 2018
+		- https://github.com/bamos/densenet.pytorch.
 	- Kaiming He, Ross Girshick, Piotr Dollar. Rethinking ImageNet Pre-training. CVPR 2019
+- **Google-Vision**:
+	- **GoogleNet**: C. Szegedy, W. Liu, Y. Jia, P. Sermanet, S. Reed, D. Anguelov, D. Erhan, V. Vanhoucke, and A. Rabinovich (GoogleNet): Going deeper with convolutions. CVPR, 2015
+		- Inception-V1
+		- Winner-of-ILSVRC-2014;
+		- https://medium.com/coinmonks/paper-review-of-googlenet-inception-v1-winner-of-ilsvlc-2014-image-classification-c2b3565a64e7
+	- Incpetion-V2: Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. ICML 2015
+	- **Inception-V3**: Rethinking the Inception Architecture for Computer Vision; CVPR 2016
+	- **Inception-V4**: Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning;
+- **Google-AutoML**:
+	- **NasNet**: Learning Transferable Architectures for Scalable Image Recognition. 2018

@@ -1,23 +1,35 @@
 # Detection, Semantic-Segmentation
 
+## Metrics
+- mAP (average of the maximum precisions at different recall values)
+
 ## Benchmarks
 - **COCO**: T.-Y. Lin, M. Maire, S. Belongie, J. Hays, P. Perona, D. Ramanan, P. Dollar, and C. L. Zitnick. Microsoft coco: Common objects in context. ECCV 2014
 
 ## Detection
 - FAIR, previous MSR:
 	- **R-CNN**: R. Girshick, J. Donahue, T. Darrell, and J. Malik. Rich feature hierarchies for accurate object detection and semantic segmentation. CVPR 2014
+		- **PASCAL-VOC: 54.2% (2007), 50.2% (2010), 49.6% (2012)**
+		- **ImageNet 200: 31.4%**
 	- **SPP**: K. He, X. Zhang, S. Ren, and J. Sun. Spatial pyramid pooling in deep convolutional networks for visual recognition. ECCV 2014
 	- **Fast R-CNN**: R. Girshick. Fast R-CNN. ICCV 2015
-		- RoIPool: faster, better accuracy
+		- Backbone CNN;
+		- RoIPool to a fixed spatial extent W x H (7x7)
+		- Faster, better accuracy
+		- Loss 1: (K+1) class on each RoI;
+		- Loss 2: L1-loss; bounding-box regression (x, y, w, h);
+		- **PASCAL-VOC: 66.9% (2007), 66.1% (2010), 65.7% (2012)**
+		- **COCO: mAP 35.9%**
 	- **Faster R-CNN**: S. Ren, K. He, R. Girshick, and J. Sun. Faster r-cnn:Towards real-time object detection with region proposal networks. NIPS 2015 
 		- https://github.com/mahyarnajibi/fast-rcnn-torch
 		- https://github.com/chenyuntc/simple-faster-rcnn-pytorch
 		- Two stage
-		- Stage 1: RPN (attention)
-			- Anchor k -> 4k;
+		- Stage 1: **RPN** (attention)
+			- Anchor k -> 4k; (x, y, w, h), WHk anchors in total;
 			- Regression loss;
 			- Positives: IoU with largest overlap with ground-truth and >.7 with any ground truth;
 		- Stage 2: R-CNN
+		- **PASCAL-VOC mAP: 73.2% (2007), 73.2% (2012)**
 	- **R-FCN**: J. Dai, Y. Li, K. He, and J. Sun. R-fcn: Object detection via region-based fully convolutional networks. NIPS 2016
 	- **FPN**: T.-Y. Lin, P. Dollar, R. Girshick, K. He, B. Hariharan, and S. Belongie. Feature pyramid networks for object detection. CVPR 2017.
 	- **Mask R-CNN**: ICCV 2017
@@ -32,7 +44,7 @@
 		- Speed: 5fps
 	- **Detectron**: https://github.com/facebookresearch/Detectron
 	- **Focal Loss**: Tsung-Yi Lin Priya Goyal Ross Girshick Kaiming He Piotr Dollar. Focal Loss for Dense Object Detection. ICCV 2017
-		- Reduce loss for well-classified classess; focus on harder classes;
+		- Reduce loss for well-classified classes; focus on harder classes;
 		- Foreground/background imbalance;
 - One-stage detector:
 	- SSD:
