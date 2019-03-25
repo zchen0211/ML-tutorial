@@ -5,12 +5,19 @@
 	- **GAN**: Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial nets. In NIPS, 2014.
 	- William Fedus, Mihaela Rosca, Balaji Lakshminarayanan, Andrew M. Dai, Shakir Mohamed, and Ian Goodfellow. Many paths to equilibrium: GANs do not need to decrease a divergence at every step. In ICLR, 2018.
 	- Augustus Odena, Christopher Olah, and Jonathon Shlens. Conditional image synthesis with auxiliary classifier GANs. In ICML, 2017.
-	- Augustus Odena, Jacob Buckman, Catherine Olsson, Tom B. Brown, Christopher Olah, Colin Raffel, and Ian Goodfellow. Is generator conditioning causally related to GAN performance? In
-ICML, 2018.
+	- Augustus Odena, Jacob Buckman, Catherine Olsson, Tom B. Brown, Christopher Olah, Colin Raffel, and Ian Goodfellow. Is generator conditioning causally related to GAN performance? ICML 2018.
+	- **SA-GAN**: Han Zhang, Ian Goodfellow, Dimitris Metaxas, and Augustus Odena. Self-attention generative adversarial networks. In arXiv preprint arXiv:1805.08318, 2018.
+		- https://github.com/heykeetae/Self-Attention-GAN
+		- Spectral-Norm + BN + ReLU
 - FAIR:
 	- Emily Denton, Soumith Chintala, Arthur Szlam, and Rob Fergus. Deep generative image models using a laplacian pyramid of adversarial networks. NIPS 2015.
 	- **DC-GAN**: Alec Radford, Luke Metz, and Soumith Chintala. Unsupervised representation learning with deep convolutional generative adversarial networks. In ICLR, 2016.
-	- **W-GAN**: Gulrajani, I., Ahmed, F., Arjovsky, M., Dumoulin, V., and Courville, A. C. Improved training of Wasserstein gans. In NIPS, 2017.
+	- **W-GAN**: Gulrajani, I., Ahmed, F., Arjovsky, M., Dumoulin, V., and Courville, A. C. Improved training of Wasserstein gans. NIPS 2017.
+		- Very good explanation: https://vincentherrmann.github.io/blog/wasserstein/
+		- Alex Irpan's blog: https://www.alexirpan.com/2017/02/22/wasserstein-gan.html
+		- W-GAN is Earth-Mover-Distance
+		- Kantorovich-Rubinstein duality
+		- sup[E_pr(f(x))-E_pg(f(x))]/K, where f() is K-Lipschitz (f's gradient < K)
 - OpenAI:
 	- Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, and Xi Chen. Improved techniques for training gans. NIPS 2016
 		- **Perception Score** as evaluation
@@ -28,14 +35,20 @@ ICML, 2018.
 		- IS: precision; FID: recall
 	- Andrew Brock, Theodore Lim, J.M. Ritchie, and Nick Weston. Neural photo editing with introspective adversarial networks. ICLR 2017.
 	- Marc G. Bellemare, Ivo Danihelka, Will Dabney, Shakir Mohamed, Balaji Lakshminarayanan, Stephan Hoyer, and Remi Munos. The Cramer distance as a solution to biased Wasserstein gradients. In arXiv preprint arXiv:1705.10743, 2017.
-- **Condition-GAN**: Mirza, M. and Osindero, S. Conditional generative adversarial
-nets. arXiv preprint arXiv:1411.1784, 2014.
-- **pix2pix**: Isola, P., Zhu, J.-Y., Zhou, T., and Efros, A. A. Image-to-image translation with conditional adversarial networks. In CVPR, 2017.
+- **Condition-GAN**: Mirza, M. and Osindero, S. Conditional generative adversarial nets. arXiv preprint arXiv:1411.1784, 2014.
 - **Progressive**: Tero Karras, Timo Aila, Samuli Laine, and Jaakko Lehtinen. Progressive growing of GANs for improved quality, stability, and variation. ICLR 2018.
 - **SeqGAN**: Yu, L., Zhang, W., Wang, J., and Yu, Y. SeqGAN: Sequence generative adversarial nets with policy gradient. In AAAI, 2017.
-- SA-GAN: Han Zhang, Ian Goodfellow, Dimitris Metaxas, and Augustus Odena. Self-attention generative adversarial networks. In arXiv preprint arXiv:1805.08318, 2018.
 - Takeru Miyato and Masanori Koyama. cGANs with projection discriminator. In ICLR, 2018.
-- **Cycle-GAN**: Zhu, J.-Y., Park, T., Isola, P., and Efros, A. A. Unpaired image-to-image translation using cycle-consistent adversarial networks. In CVPR, 2017.
+- **SN-GAN**: Spectral Normalization for Generative Adversarial Networks, ICLR 2018
+- **BAIR**:
+	- **Cycle-GAN**: Zhu, J.-Y., Park, T., Isola, P., and Efros, A. A. Unpaired image-to-image translation using cycle-consistent adversarial networks. CVPR 2017
+		- https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+		- G: X -> Y; discriminator: D_Y;
+		- F: Y -> X; discriminator: D_X;
+		- Adversarial loss: E[logD_Y(y)] + E[log(1-D_Y(G(x)))]
+		- Similar loss for D_X
+		- Consistency loss: ||F(G(x))-x|| + ||G(F(y))-y|| with L1 norm
+	- **pix2pix**: Isola, P., Zhu, J.-Y., Zhou, T., and Efros, A. A. Image-to-image translation with conditional adversarial networks. CVPR, 2017.
 - Feature Learning:
 	- Donahue, J., Krahenbuhl, P., and Darrell, T. Adversarial feature learning.
 - Inference:

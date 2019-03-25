@@ -7,6 +7,8 @@
 - **COCO**: T.-Y. Lin, M. Maire, S. Belongie, J. Hays, P. Perona, D. Ramanan, P. Dollar, and C. L. Zitnick. Microsoft coco: Common objects in context. ECCV 2014
 
 ## Detection
+- A very good blog (Lilian Weng, OpenAI):
+	- https://lilianweng.github.io/lil-log/2017/10/29/object-recognition-for-dummies-part-1.html
 - FAIR, previous MSR:
 	- **R-CNN**: R. Girshick, J. Donahue, T. Darrell, and J. Malik. Rich feature hierarchies for accurate object detection and semantic segmentation. CVPR 2014
 		- **PASCAL-VOC: 54.2% (2007), 50.2% (2010), 49.6% (2012)**
@@ -24,6 +26,7 @@
 		- https://github.com/mahyarnajibi/fast-rcnn-torch
 		- https://github.com/chenyuntc/simple-faster-rcnn-pytorch
 		- Two stage
+		- Stage 0: backbone CNN (VGG, ResNet)
 		- Stage 1: **RPN** (attention)
 			- Anchor k -> 4k; (x, y, w, h), WHk anchors in total;
 			- Regression loss;
@@ -50,16 +53,13 @@
 	- SSD:
 		- W. Liu, D. Anguelov, D. Erhan, C. Szegedy, and S. Reed. SSD: Single shot multibox detector. ECCV 2016
 			- Improves YOLO by using default bounding boxes
-		-  C.-Y. Fu, W. Liu, A. Ranga, A. Tyagi, and A. C. Berg. DSSD: Deconvolutional single shot detector. 2016
+		- C.-Y. Fu, W. Liu, A. Ranga, A. Tyagi, and A. C. Berg. DSSD: Deconvolutional single shot detector. 2016
 	- YOLO:
 		- **YOLO**: J. Redmon, S. Divvala, R. Girshick, and A. Farhadi. You only look once: Unified, real-time object detection. CVPR 2016
 		- **YOLOv2**: J. Redmon and A. Farhadi. YOLO9000: Better, faster, stronger. CVPR 2017
 			- Multi-scale training
 			- DarkNet-19
 		- **YOLOv3**: J. Redmon and A. Farhadi. Yolov3: An incremental improvement. 2018
-- **FCN**: J. Long, E. Shelhamer, and T. Darrell. Fully convolutional networks for semantic segmentation. CVPR 2015
-	- https://github.com/wkentaro/pytorch-fcn
-	- https://github.com/shelhamer/fcn.berkeleyvision.org
 - Proposals:
 	- **Selective Search**: J. R. Uijlings, K. E. van de Sande, T. Gevers, and A. W. Smeulders. Selective search for object recognition. IJCV 2013
 	- **EdgeBoxes**:  C. L. Zitnick and P. Dollar. Edge boxes: Locating object proposals from edges. ECCV 2014
@@ -73,5 +73,9 @@
 ## Pose Estimation
 - OpenPose: https://github.com/CMU-Perceptual-Computing-Lab/openpose
 
-## Segmentation
+## Semantic Segmentation
 - **U-Net**, Olaf Ronneberger, Philipp Fischer, Thomas Brox: Convolutional Networks for Biomedical Image Segmentation, MICCAI 2015
+- **FCN**: J. Long, E. Shelhamer, and T. Darrell. Fully convolutional networks for semantic segmentation. CVPR 2015
+	- https://github.com/wkentaro/pytorch-fcn
+	- https://github.com/shelhamer/fcn.berkeleyvision.org
+	- Pyramid (like SSD)

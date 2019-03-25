@@ -1,16 +1,29 @@
 # VQA, Image/Video Caption
 
+## Benchmark
+- **CLEVR**
+- **Visual genome**: Connecting language and vision using crowd-sourced dense image annotations.
+- Visual Dialog. CVPR 2017
+	- https://visualqa.org/challenge.html
+
 ## Video
 - Video caption: https://github.com/xiadingZ/video-caption.pytorch
 
 ## VQA
 - MSR:
 	- Vqa: Visual question answering. ICCV 2015.
-- Devi, Dhruv:
-	- Visual Dialog. CVPR 2017
+- **FAIR**:
+	- Devi, Dhruv: Visual Dialog. CVPR 2017
+		- https://visualqa.org/challenge.html
+	- A-star best performer:
+		- LSTM for the question to encode a vector;
+		- Vector as query, do attention, softmax, sum on CNN spatial feature;
+		- Vector produces all answers (VQA has an answer set);
 - Stanford:
-	- Visual genome: Connecting language and vision using crowd- sourced dense image annotations.
 - Bottom-up and top-down attention for image captioning and visual question answering. CVPR 2018
+	- Faster RCNN + ResNet-101
+- **MUREL**. Remi Cadene, Hedi Ben-younes, Matthieu Cord, Nicolas Thome. MUREL: Multimodal Relational Reasoning for Visual Question Answering. 2019
+	- https://github.com/Cadene/murel.bootstrap.pytorch
 
 ## Reasoning
 - Kexin Yi, Jiajun Wu, Chuang Gan, Antonio Torralba, Pushmeet Kohli and Joshua B. Tenenbaum. Neural-Symbolic VQA: Disentangling Reasoning from Vision and Language Understanding, NIPS 2018

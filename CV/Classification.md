@@ -26,3 +26,6 @@
 	- **Inception-V4**: Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning;
 - **Google-AutoML**:
 	- **NasNet**: Learning Transferable Architectures for Scalable Image Recognition. 2018
+- **Bilinear**:
+	- Tsung-Yu Lin, Aruni RoyChowdhury, Subhransu Maji. Bilinear CNN Models for Fine-grained Visual Recognition. ICCV 2015
+		- https://github.com/HaoMood/bilinear-cnn

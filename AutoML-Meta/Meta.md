@@ -9,6 +9,9 @@
 	- H. Qi, M. Brown, and D. G. Lowe. Low-shot learning with imprinted weights. 2017
 - Metric:
 	-  O. Vinyals, C. Blundell, T. Lillicrap, D. Wierstra, et al. Matching networks for one shot learning. NIPS 2016
+- Conv-learner:
+	- **SNAIL**: Pieter Abbeel, et. al. A Simple Neural Attentive Meta-Learner, ICLR 2018
+		- Temporal 1D-Conv + Attention;
 
 ## MAML (Chelsea Finn)
 - MAML: https://github.com/cbfinn/maml
