@@ -1,6 +1,7 @@
 # Weakly-Supervsied Learning
 
 ## FAIR
+- **Tutorial**: M. A. Ranzato and A. Graves. Deep unsupervised learning. NIPS Tutorial, 2018
 - **URU**: Exploring the Limits of Weakly Supervised Pretraining. ECCV 2018
 	- Pretrain on a larger dataset (1.5 billion Instagram) + (1.5k, 8.5k, 17k hashtag classes);
 	- Preprocessing: image-deduplication, hash-tags clean up (SynNet);

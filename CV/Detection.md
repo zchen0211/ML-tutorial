@@ -22,7 +22,7 @@
 		- Loss 2: L1-loss; bounding-box regression (x, y, w, h);
 		- **PASCAL-VOC: 66.9% (2007), 66.1% (2010), 65.7% (2012)**
 		- **COCO: mAP 35.9%**
-	- **Faster R-CNN**: S. Ren, K. He, R. Girshick, and J. Sun. Faster r-cnn:Towards real-time object detection with region proposal networks. NIPS 2015 
+	- **Faster R-CNN**: S. Ren, K. He, R. Girshick, and J. Sun. Faster r-cnn: Towards real-time object detection with region proposal networks. NIPS 2015 
 		- https://github.com/mahyarnajibi/fast-rcnn-torch
 		- https://github.com/chenyuntc/simple-faster-rcnn-pytorch
 		- Two stage

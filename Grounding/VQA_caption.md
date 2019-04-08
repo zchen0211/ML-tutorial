@@ -1,13 +1,29 @@
 # VQA, Image/Video Caption
 
+## Metrics
+- BLEU
+- METEOR
+- ROUGE-L
+- CIDEr
+
 ## Benchmark
 - **CLEVR**
 - **Visual genome**: Connecting language and vision using crowd-sourced dense image annotations.
 - Visual Dialog. CVPR 2017
 	- https://visualqa.org/challenge.html
+- GQA:
+	- Yuke Zhu, Oliver Groth, Michael Bernstein, Li Fei-Fei. Visual7W: Grounded Question Answering in Images. 2017
+	- https://cbmm.mit.edu/research/projects-thrust/vision-and-language/grounded-question-answering
+	- Object-level grounding;
 
-## Video
-- Video caption: https://github.com/xiadingZ/video-caption.pytorch
+## Caption
+- Stanford
+	- A. Karpathy and L. Fei-Fei. Deep visual-semantic align- ments for generating image descriptions. CVPR 2015
+	- R. Krishna, K. Hata, F. Ren, L. Fei-Fei, and J. C. Niebles. Dense-Captioning events in videos. ICCV 2017
+- Alex/Tamara Berg:
+	- G. Kulkarni, V. Premraj, S. Dhar, S. Li, Y. Choi, A. C. Berg, and T. L. Berg. Baby talk: Understanding and generating image descriptions. CVPR 2011
+- Dhruv/Devi/FAIR:
+	- J. Lu, J. Yang, D. Batra, and D. Parikh. Neural baby talk. CVPR 2018
 
 ## VQA
 - MSR:

@@ -32,16 +32,6 @@
 - Graphical model inference: Sequential Monte Carlo meets deterministic approximations
 
 ## Bayesian Deep Learning
-- VAE:
-	- DVAE#: Discrete Variational Autoencoders with Relaxed Boltzmann Priors
-		- https://github.com/QuadrantAI/dvae
-	- Information Constraints on Auto-Encoding Variational Bayes
-	- IntroVAE: Introspective Variational Autoencoders for Photographic Image Synthesis
-	- Hamiltonian Variational Auto-Encoder
-	- Importance Weighting and Variational Inference
-	- **Isolating Sources of Disentanglement in Variational Autoencoders**
-	- Gaussian Process Prior Variational Autoencoders
-	- **Non-Adversarial Mapping with VAEs (FAIR)**
 - Gaussian Process:
 	- Orthogonally Decoupled Variational Gaussian Processes
 - Constrained Generation of Semantically Valid Graphs via Regularizing Variational Autoencoders

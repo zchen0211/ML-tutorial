@@ -1,11 +1,30 @@
 # Classification
 
 ## Classification, Network Design
-- **AlexNet** A. Krizhevsky, I. Sutskever, and G. Hinton (AlexNet): ImageNet classification with deep convolutional neural networks. NIPS, 2012.
+- **AlexNet** A. Krizhevsky, I. Sutskever, and G. Hinton. ImageNet classification with deep convolutional neural networks. NIPS 2012.
 - **VGGNet** K. Simonyan and A. Zisserman. Very deep convolutional networks for large-scale image recognition (VGGNet): arXiv:1409.1556, 2014
 - **NIN** Lin, Min, Chen, Qiang, and Yan, Shuicheng (NIN): Network in network. Arxiv, 1312.4400, 2013.
 - **FAIR**:
 	- **ResNet**: Deep Residual Learning for Image Recognition. CVPR 2016
+		- downample: conv1x1 (stride=2) - BN
+		- Basic block:
+			- x -> Conv3x3 - BN - ReLU - Conv3x3 - BN -> out
+			- x = ReLU(x + out)
+		- Basic block (downsample):
+			- x -> Conv (stride=2) - BN - ReLU - conv - BN -> out
+			- x = ReLU(downsample(x) + out)
+		- Bottleneck block
+			- x -> Conv1x1 (BN, ReLU) - Conv3x3 (BN, ReLU) - Conv (BN) -> out
+			- x = ReLU(x + out)
+		- Bottleneck block (downsample)
+			- x -> Conv1x1 (stride=2, BN, ReLU) - Conv3x3 (BN, ReLU) - Conv (BN) -> out
+			- x = ReLU(downsample(x) + out)
+		- Make a layer (Res1, ..., Res4)
+			- Layer (downsample) - Layer - ...
+		- Final structure:
+			- **Initial Conv**: conv1 (stride=2, BN, ReLU) - Max-Pool -> 64 x 56 x 56
+			- Res1 (64) - Res2 (112, downsample) - Res3 (256, down) - Res4 (512, down) -> 7 x 7
+			- Average-pool (7x7) - fc1000
 	- **ResNext**: Aggregated Residual Transformations for Deep Neural Networks. CVPR 2017
 		- ImageNet 2nd 2016
 		- **Grouped-Convolution**
@@ -21,11 +40,9 @@
 		- Inception-V1
 		- Winner-of-ILSVRC-2014;
 		- https://medium.com/coinmonks/paper-review-of-googlenet-inception-v1-winner-of-ilsvlc-2014-image-classification-c2b3565a64e7
-	- Incpetion-V2: Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. ICML 2015
+	- **Incpetion-V2**: Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. ICML 2015
 	- **Inception-V3**: Rethinking the Inception Architecture for Computer Vision; CVPR 2016
 	- **Inception-V4**: Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning;
-- **Google-AutoML**:
-	- **NasNet**: Learning Transferable Architectures for Scalable Image Recognition. 2018
 - **Bilinear**:
 	- Tsung-Yu Lin, Aruni RoyChowdhury, Subhransu Maji. Bilinear CNN Models for Fine-grained Visual Recognition. ICCV 2015
 		- https://github.com/HaoMood/bilinear-cnn

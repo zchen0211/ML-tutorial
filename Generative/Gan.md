@@ -25,6 +25,7 @@
 	- Tim Salimans, Han Zhang, Alec Radford, and Dimitris Metaxas. Improving GANs using optimal transport. In ICLR, 2018.
 - DeepMind:
 	- Andrew Brock, Jeff Donahue, Karen Simonyan. **Large Scale GAN Training for High Fidelity Natural Image Synthesis**, ICLR 2019
+		- https://github.com/ajbrock/BigGAN-PyTorch.git
 		- SA-GAN network structure (Zhang 2018)
 		- G: class-conditional BatchNorm (Dumoulin 2017, de Vries 2017)
 		- D: projection (Miyato 2018)
