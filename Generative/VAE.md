@@ -1,6 +1,13 @@
 # Variational Auto Encoder
 
 ## VAE
+- A Very good tutorial:
+	- https://www.jianshu.com/p/bfa6b5947cd9
+	- http://www.sohu.com/a/210551059_473283
+	- https://zhuanlan.zhihu.com/p/34342392
+	- https://blog.csdn.net/a7910932/article/details/46593691
+	- https://www.zhihu.com/question/41765860
+	- https://zhuanlan.zhihu.com/p/27239155
 - Basics:
 	- p(x) = sum_z p(x,z)
 	- EM:
@@ -23,8 +30,13 @@
 	- Rezende, Danilo J, Mohamed, Shakir, and Wierstra, Daan. **Stochastic backpropagation and approximate inference in deep generative models**. ICML 2014
 	- **Conditional VAE**: Kingma, D.P., Jimenez Rezende, D., Mohamed, S., Welling, M.: Semi-supervised learning with deep generative models. NIPS 2014
 	- Sohn, K., Lee, H., Yan, X.: Learning structured output representation using deep conditional generative models. NIPS 2015
+- **GAN-VAE**: Zhiting Hu. On Unifying Deep Generative Models
+	- Understanding VAE and GAN with Wake-Sleep
 - Xi Chen, Diederik P Kingma, Tim Salimans, Yan Duan, Prafulla Dhariwal, John Schulman, Ilya Sutskever, and Pieter Abbeel. Variational lossy autoencoder. arXiv preprint arXiv:1611.02731, 2016.
+- Chen at. al., **Variational Lossy Autoencoder** (2017)
+	- Minimum Description Length for VAE
 - **FVAE**: Z. Deng, R. Navarathna, P. Carr, S. Mandt, Y. Yue, I. Matthews, and G. Mori. Factorized variational autoencoders for modeling audience reactions to movies. CVPR 2017.
+- **ACN**: Graves et. al., Associative Compression Networks for Representation Learning (2018)
 - NIPS 2018:
 	- **DVAE**: Discrete Variational Autoencoders with Relaxed Boltzmann Priors
 		- https://github.com/QuadrantAI/dvae

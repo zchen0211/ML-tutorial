@@ -16,15 +16,6 @@
 	- https://cbmm.mit.edu/research/projects-thrust/vision-and-language/grounded-question-answering
 	- Object-level grounding;
 
-## Caption
-- Stanford
-	- A. Karpathy and L. Fei-Fei. Deep visual-semantic align- ments for generating image descriptions. CVPR 2015
-	- R. Krishna, K. Hata, F. Ren, L. Fei-Fei, and J. C. Niebles. Dense-Captioning events in videos. ICCV 2017
-- Alex/Tamara Berg:
-	- G. Kulkarni, V. Premraj, S. Dhar, S. Li, Y. Choi, A. C. Berg, and T. L. Berg. Baby talk: Understanding and generating image descriptions. CVPR 2011
-- Dhruv/Devi/FAIR:
-	- J. Lu, J. Yang, D. Batra, and D. Parikh. Neural baby talk. CVPR 2018
-
 ## VQA
 - MSR:
 	- Vqa: Visual question answering. ICCV 2015.
@@ -40,6 +31,11 @@
 	- Faster RCNN + ResNet-101
 - **MUREL**. Remi Cadene, Hedi Ben-younes, Matthieu Cord, Nicolas Thome. MUREL: Multimodal Relational Reasoning for Visual Question Answering. 2019
 	- https://github.com/Cadene/murel.bootstrap.pytorch
+- Baselines:
+	- https://github.com/Cyanogenoid/pytorch-vqa
+- Counting:
+	- Learning to Count Objects in Natural Images for Visual Question Answering, ICLR 2018
+		- https://github.com/Cyanogenoid/vqa-counting
 
 ## Reasoning
 - Kexin Yi, Jiajun Wu, Chuang Gan, Antonio Torralba, Pushmeet Kohli and Joshua B. Tenenbaum. Neural-Symbolic VQA: Disentangling Reasoning from Vision and Language Understanding, NIPS 2018
