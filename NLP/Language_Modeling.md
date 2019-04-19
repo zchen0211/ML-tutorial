@@ -19,6 +19,10 @@
 			- First token [CLS], finally used as classifier after FC and softmax;
 	- Parameter-Efficient Transfer Learning for NLP, 2019
 		- Adapter module
+	- Yang You, Jing Li, Jonathan Hseu, Xiaodan Song, James Demmel, Cho-Jui Hsieh. Reducing BERT Pre-Training Time from 3 Days to 76 Minutes. 2019
+		- Batch-size: 64k - 32k
+		- Optimizer: **LAMB** (Layer-wise Adaptive Moments optimizer for Batch training)
+		- Iteration: 1m -> 8,599
 - OpenAI:
 	- **GPT**: Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever. Improving Language Understanding by Generative Pre-Training. 2018
 		- Causal Transformer;

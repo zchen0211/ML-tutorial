@@ -72,6 +72,16 @@
 - Jigsaw:
 	- Unsupervised Learning of Visual Representations by Solving Jigsaw Puzzles. ECCV 2016
 
+## DeepMind
+- Neural scene representation and rendering Science 2019
+	- Input: images and viewpoints; output: a query new image
+	- **Generative Query Network (GQN)**: learns an internal representation
+		- t-SNE
+		- VAE will fail
+		- Factorized-representation
+	- g(x|vq, r) = int g(x,z|vq, r)dz, z: latent variable
+	- Env: rooms with multiple objects (DML?), allow agent to act, robotic-arm;
+
 ## Videos
 - Self-Supervised Video Representation Learning With Odd-One-Out Networks
 - Shuffle and Learn: Unsupervised Learning using Temporal Order Verification

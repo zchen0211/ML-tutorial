@@ -29,7 +29,12 @@
 	- meaningful metrics & standardized tasks!
 - Unsupervised Translation:
 	- A. Conneau et al. Word translation without parallel data, ICLR 2018
-	- https://github.com/facebookresearch/MUSE
+		- https://github.com/facebookresearch/MUSE
+		- https://github.com/facebookresearch/fastText
+		- W = argmin||Wx-y||^2
+		- No pair data, so fool discrimitor for Wx and y
+		- Nearest neighbor for refinements
+		- Orthogonality
 	- G. Lample et al. Phrase-based and neural unsupervised machine translation, EMNLP 2018
 - R. Jozefowicz et. al. Exploring the Limits of Language Modeling (2016)
 - van den Oord, A., et al. WaveNet: A Generative Model for Raw Audio. arxiv (2016). 
@@ -43,3 +48,6 @@
 	- Unsup MT under some conditions
 - **Does-not-Work-yet**:
 	- Modeling long documents
+- **FAIR**:
+	- Yann. Adversarially-Trained Normalized Noisy-Feature Auto-Encoder for Text Generation, 2018
+	- Yann. Byte-Level Recursive Convolutional Auto-Encoder for Text, 2018
