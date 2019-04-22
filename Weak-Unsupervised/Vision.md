@@ -73,6 +73,8 @@
 	- Unsupervised Learning of Visual Representations by Solving Jigsaw Puzzles. ECCV 2016
 
 ## DeepMind
+- Attentional ShapeContextNet for Point Cloud Recognition. NIPS 2016
+	- 
 - Neural scene representation and rendering Science 2019
 	- Input: images and viewpoints; output: a query new image
 	- **Generative Query Network (GQN)**: learns an internal representation

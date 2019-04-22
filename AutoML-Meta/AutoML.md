@@ -6,7 +6,7 @@
 ## Optimize Tensor Program
 - Auto-TVM:
 	- Tianqi Chen and Thierry Moreau and Ziheng Jiang and Lianmin Zheng and Eddie Yan. TVM: An Automated End-to-End Optimizing Compiler for Deep Learning. OSDI 2018
-	- Tianqi Chen and Lianmin Zheng and Eddie Yan and Ziheng Jiang   and Thierry Moreau and Luis Ceze and Carlos Guestrin and Arvind Krishnamurthy. Learning to Optimize Tensor Programs. NIPS 2018
+	- Tianqi Chen and Lianmin Zheng and Eddie Yan and Ziheng Jiang and Thierry Moreau and Luis Ceze and Carlos Guestrin and Arvind Krishnamurthy. Learning to Optimize Tensor Programs. NIPS 2018
 		- Input: a program, output: an efficient execution;
 		- Model 1: GBT (XGBoost);
 		- Model 2: TreeGRU; (Kai Sheng Tai, Richard Socher, and Christopher D Manning. Improved semantic representations from tree-structured long short-term memory networks.)

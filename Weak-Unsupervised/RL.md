@@ -15,6 +15,7 @@
 ## Intrinsic Reward
 - Curious Agent
 	- Pathak et. al. Curiosity-driven Exploration by Self-supervised Prediction (2017)
+		- **Prediction Error**: choose actions to maximise prediction error in observations.
 - Baldi et. al., Bayesian Surprise Attracts Human Attention. (2005)
 - Prediction Gain: Bellemare et. al. (Unifying Count-Based Exploration and Intrinsic Motivation. 2016)
 - Complexity Gain: Graves et. al. Automated Curriculum learning For Neural Networks. (2017)
