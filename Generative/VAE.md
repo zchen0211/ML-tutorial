@@ -18,6 +18,8 @@
 	- VI, ELBO:
 		- KL(q(z) | p(z|x)) = E(log q(z)) - E(log p(z,x)) + log p(x)
 		- ELBO(q) = E(log p(z, x)) - E(log q(z))
+- A great codebase:
+	- https://github.com/wohlert/semi-supervised-pytorch/tree/master/examples/notebooks
 - **VAE**:
 	- Diederik P Kingma and Max Welling. Auto-encoding variational bayes. arXiv preprint arXiv:1312.6114, 2013.
 		- KL(q(z|x), p(z|x)) = E_q(log q(z|x)) - E_q(log p(z|x))
@@ -33,6 +35,9 @@
 - **GAN-VAE**: Zhiting Hu. On Unifying Deep Generative Models
 	- Understanding VAE and GAN with Wake-Sleep
 - Xi Chen, Diederik P Kingma, Tim Salimans, Yan Duan, Prafulla Dhariwal, John Schulman, Ilya Sutskever, and Pieter Abbeel. Variational lossy autoencoder. arXiv preprint arXiv:1611.02731, 2016.
+- **LVAE**: Casper Kaae Sønderby, Tapani Raiko, Lars Maaløe, Søren Kaae Sønderby, Ole Winther. Ladder Variational Autoencoders. 2016
+- **SOA**: Lars Maaløe, Casper Kaae Sønderby, Søren Kaae Sønderby, Ole Winther. Auxiliary Deep Generative Models. 2016
+- **Beta-VAE**: Irina Higgins, Loic Matthey, Arka Pal, Christopher Burgess, Xavier Glorot, Matthew Botvinick, Shakir Mohamed, Alexander Lerchner. beta-VAE: Learning Basic Visual Concepts with a Constrained Variational Framework. ICLR 2017
 - Chen at. al., **Variational Lossy Autoencoder** (2017)
 	- Minimum Description Length for VAE
 - **FVAE**: Z. Deng, R. Navarathna, P. Carr, S. Mandt, Y. Yue, I. Matthews, and G. Mori. Factorized variational autoencoders for modeling audience reactions to movies. CVPR 2017.
@@ -56,3 +61,12 @@
 - **DRAW**: A Recurrent Neural Network For Image Generation. ICML 2015
 	- https://github.com/ericjang/draw
 	- https://github.com/chenzhaomin123/draw_pytorch
+
+## VAE in NLP
+- Good summaries:
+	- https://chuansongme.com/n/1628774042621
+- Generating Sentences From a Continuous Spaces, ICLR'16
+- Neural Variational Inference for Text Processing, ICML'16
+- Language as a Latent Variable: Discrete Generative Models for Sentence Compression, EMNLP
+16
+- A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues, AAAI'17

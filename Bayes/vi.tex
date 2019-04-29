@@ -116,7 +116,7 @@ l(\phi, \theta) = -E_{x\sim q(x|z)} \log p(x|z) + KL(q(z|x), p(z))
 \end{equation}
 
 \section{Fisher Information Matrix, Natural Gradient}
-KL-Divergence:
+\subsection{KL-Divergence}
 \begin{eqnarray*}
 &KL(p_w(x), p_{w+\triangle w}(x)) \\
 =& E_{x\sim p_w(x)} \log p_w(x) - \log p_{w+\triangle w}(x)\\
@@ -129,5 +129,19 @@ where
 \nabla^2_w \log p_w(x) = \frac{\nabla^2_w p_w(x)}{p_w(x)} - \frac{\nabla_w p_w(x)\nabla_w p_w(x)^T}{p_w^2(x)} \\
 = \frac{\nabla^2_w p_w(x)}{p_w(x)} - \nabla_w \log p_w(x)\nabla_w \log p_w(x)^T
 \end{eqnarray*}
+Also, we use the following property:
+\begin{eqnarray*}
+E_{x\sim p_w(x)}\nabla_w \log p_w(x) &=& \int_x p_w(x)\nabla_w \log p_w(x)dx=\int_x \nabla_w p_w(x)dx\\
+&=&\nabla_w(\int_x  p_w(x)dx) = 0\\
+E_{x\sim p_w(x)}\nabla^2_w \log p_w(x) &=& 0
+\end{eqnarray*}
+\subsection{Fisher-Information Matrix}
+\begin{equation*}
+E_{x\sim p(x)}\nabla_w \log p_w(x)\nabla_w \log p_w(x)^T
+\end{equation*}
+\subsection{Mutual Information}
+\begin{equation}
+I(x;y) := KL(p_{x,y}, p(x) \times p(y)) = h(x) - h(x|y)\ge 0
+\end{equation}
 
 \end{document}

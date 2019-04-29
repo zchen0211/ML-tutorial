@@ -18,6 +18,8 @@
 		- W-GAN is Earth-Mover-Distance
 		- Kantorovich-Rubinstein duality
 		- sup[E_pr(f(x))-E_pg(f(x))]/K, where f() is K-Lipschitz (f's gradient < K)
+		- D-step: loss(D)=D(fake, 1) - D(real,-1) + gradient-penalty
+		- G-step: loss(G)=D(G(fake), -1)
 - OpenAI:
 	- Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, and Xi Chen. Improved techniques for training gans. NIPS 2016
 		- **Perception Score** as evaluation

@@ -3,7 +3,13 @@
 ## Benchmarks
 - Google:
 	- **Sports-1M**: Andrej Karpathy; George Toderici; Sanketh Shetty; Thomas Leung; Rahul Sukthankar; Li Fei-Fei. Large-scale Video Classification with Convolutional Neural Networks. CVPR 2014;
-	- **YouTube-8M**: YouTube-8M: A Large-Scale Video Classification Benchmark
+		- 1 Million videos, 487 classes x (1k-3k) videos per class; test: 70% training, 10% val, 20% testing;
+		- 360 x 640 resolution
+	- **YouTube-8M**: Sami Abu-El-Haija, Nisarg Kothari, Joonseok Lee, Paul Natsev, George Toderici, Balakrishnan Varadarajan, Sudheendra Vijayanarasimhan. YouTube-8M: A Large-Scale Video Classification Benchmark
+		- https://research.google.com/youtube8m/
+		- 6.1 Million, 350,000 hours
+		- 2.6 billion audio/visual features
+		- 3,862 classes (from knowledge graph: https://developers.google.com/knowledge-graph/)
 	- **Kinetics**: Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset, CVPR 2017
 		- 240k train, 20k val, 400 action classes, 10s each clip;
 		- Classification;
@@ -12,6 +18,10 @@
 		- Baseline: ConvNet + LSTM, Two-Stream, 3D ConvNets
 	- W. Kay, J. Carreira, K. Simonyan, B. Zhang, C. Hillier, S. Vijayanarasimhan, F. Viola, T. Green, T. Back, P. Natsev, et al. The kinetics human action video dataset. 2017
 	- **AVA**: C. Gu, C. Sun, D. A. Ross, C. Vondrick, C. Pantofaru, Y. Li, S. Vijayanarasimhan, G. Toderici, S. Ricco, R. Sukthankar, et al. AVA: A video dataset of spatio-temporally localized atomic visual actions. CVPR 2018
+		- https://research.google.com/ava/index.html
+		- 80 categories
+		- 15 min long clips from 430 movies
+		- 1.62M action labels
 - Other large-scale:
 	- **Something something**: Goyal, R., Kahou, S.E., Michalski, V., Materzynska, J., Westphal, S., Kim, H., Haenel, V., Fruend, I., Yianilos, P., Mueller-Freitag, M., et al.: The something something video database for learning and evaluating visual common sense. ICCV 2017
 		- Need to understand physical interactions

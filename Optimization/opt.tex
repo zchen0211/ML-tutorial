@@ -1,0 +1,177 @@
+\documentclass{article}
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2018
+
+% ready for submission
+% \usepackage{neurips_2018}
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+%     \usepackage[preprint]{neurips_2018}
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+     \usepackage[final]{neurips_2018}
+
+% to avoid loading the natbib package, add option nonatbib:
+%     \usepackage[nonatbib]{neurips_2018}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Optimization}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+\author{%
+  David S.~Hippocampus\thanks{}\\%Use footnote for providing further information
+    %about author (webpage, alternative address)---\emph{not} for acknowledging
+    %funding agencies.} \\
+  Department of Computer Science\\
+  Cranberry-Lemon University\\
+  Pittsburgh, PA 15213 \\
+  \texttt{hippo@cs.cranberry-lemon.edu} \\
+  % examples of more authors
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \AND
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+}
+
+\begin{document}
+% \nipsfinalcopy is no longer used
+
+\maketitle
+
+\begin{abstract}
+Optimization
+\end{abstract}
+
+\section{Lagrange Dual}
+Suppose we want to optimize $x\in \mathbb{R}^n$:
+\begin{eqnarray*}
+\min_x f(x)\\
+s.t.\qquad c_i(x) \le 0\\
+h_j(x) = 0
+\end{eqnarray*}
+We introduce the generalized Lagrange function:
+\begin{equation}
+L(x,\alpha,\beta)=f(x)+\sum_i\alpha_ic_i(x)+\sum_j\beta_jh_j(x) \qquad \alpha_i \ge 0
+\end{equation}
+Then the \textbf{primal function}:
+\begin{equation}
+\theta_P(x) = \max_{\alpha,\beta:\alpha_i\ge0}L(x,\alpha,\beta)
+\end{equation}
+\textbf{Important Properties}: 
+\begin{enumerate}
+\item if the condition of x does not satisfy, i.e., $c_i(x)>0$ or $h_j(x)\neq0$, then we have
+\begin{equation*}
+\theta_P(x)=+\infty
+\end{equation*}
+\item if x satisfies, we have
+\begin{equation*}
+\theta_P(x)=f(x)
+\end{equation*}
+\end{enumerate}
+We define $p^*$ as the solution of the primal problem:
+\begin{equation}
+p^*=\min_x\theta_P(x)
+\end{equation}
+
+\subsection{Dual Problem}
+We define a function of $\alpha, \beta$:
+\begin{equation}
+\theta_D(\alpha, \beta)=\min_xL(x,\alpha,\beta)
+\end{equation}
+We define the dual problem as:
+\begin{equation}
+d^*=\max_{\alpha,\beta:\alpha_i\ge0}\theta_D(\alpha,\beta)=\max_{\alpha,\beta:\alpha_i\ge0}\min_xL(x,\alpha,\beta)
+\end{equation}
+
+\subsection{Properties}
+If both $p^*$ and $d^*$ exists, we have:
+\begin{equation}
+d^* \le p^*
+\end{equation}
+\textbf{KKT} condition, if following conditions hold, we have $d^*=p^*$:
+\begin{enumerate}
+\item $f(x)$ and inequality condition $c_i(x)$ both convex;
+\item Equality condition $h_i(x)$ is an affine transform;
+\item Exist $x$ satisfies $c_i(x)<0$
+\end{enumerate}
+
+\textbf{KKT} condition: if $\{x^*,\alpha,\beta\}$ with $x^*$ as a local optimum, we have
+\begin{enumerate}
+\item Stationary:
+\begin{equation}
+\nabla f(x^*)+\sum_i\alpha_i\nabla c_i(x)+\sum_j\beta_j\nabla h_j(x)=0
+\end{equation}
+\item Primal feasibility:
+\begin{eqnarray}
+c_i(x^*)\le 0\\
+h_j(x^*)=0
+\end{eqnarray}
+\item Dual feasibility:
+\begin{equation}
+\alpha_i\ge0
+\end{equation}
+\item Complementary slackness:
+\begin{equation}
+\alpha_ic_i(x^*)=0
+\end{equation}
+\end{enumerate}
+
+\subsection{Application 1: SVM}
+\begin{eqnarray}
+\min_{w,b}\frac{1}{2}||w||^2\\
+s.t.\qquad (w^Tx_i+b)y_i\ge1
+\end{eqnarray}
+The function with Lagrange multiplier is:
+\begin{equation*}
+L(w,b;\alpha) =\frac{1}{2}||w||^2+\sum_{i=1}^n\alpha_i(1-y_i(wx_i+b))
+\end{equation*}
+
+Stability:
+\begin{eqnarray}
+\nabla_w L= w-\sum_{i=1}^n\alpha_iy_ix_i=0 \Rightarrow w=\sum_{i=1}^n\alpha_iy_ix_i\\
+\nabla_b L=0 \Rightarrow \sum_{i=1}^n\alpha_iy_i=0
+\end{eqnarray}
+Then, make the substitution for $w$, we have:
+\begin{eqnarray*}
+L(\alpha)&=&\frac{1}{2}\sum_i\sum_j\alpha_i\alpha_jy_iy_jx^T_ix_j+\sum_i\alpha_i-\sum_i\sum_j\alpha_i\alpha_jy_iy_jx^T_ix_j-b(\sum_i\alpha_iy_i)\\
+&=&\sum_i\alpha_i-\frac{1}{2}\sum_i\sum_j\alpha_i\alpha_jy_iy_jx^T_ix_j \qquad s.t. \qquad \sum_{i=1}^n\alpha_iy_i=0
+\end{eqnarray*}
+We will maximize the dual subject to the constraint.
+
+\end{document}
