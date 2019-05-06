@@ -74,6 +74,10 @@
 		- Vector-quantization: S3D for feature extraction;
 		- WordPiece for text (ASR API);
 		- BLEU-4 1.42 to 5.42 on YouCook II;
+- MSRA:
+	- X Zhu, Y Wang, J Dai, L Yuan, and Y Wei. Flow-Guided Feature Aggregation for Video Object Detection. ICCV'17
+	- X Zhu, J Dai, L Yuan, and Y Wei. Towards High Performance Video Object Detection. CVPR'18 
+	- Z Zhang, Dazhi Cheng, X Zhu, S Lin, and J Dai. Integrated Object Detection and Tracking with Tracklet-Conditioned Detection. 2018
 - Instructional:
 	- J. Malmaud, J. Huang, V. Rathod, N. Johnston, A. Rabinovich, and K. Murphy. What’s cooking? interpreting cooking videos using text, speech and vision. NAACL 2015
 	- J.-B. Alayrac, P. Bojanowski, N. Agrawal, J. Sivic, I. Laptev, and S. Lacoste-Julien. Unsupervised learning from narrated instruction videos. CVPR 2016

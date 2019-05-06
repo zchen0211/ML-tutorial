@@ -1,0 +1,181 @@
+\documentclass{article}
+
+% if you need to pass options to natbib, use, e.g.:
+%     \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading neurips_2018
+
+% ready for submission
+% \usepackage{neurips_2018}
+
+% to compile a preprint version, e.g., for submission to arXiv, add add the
+% [preprint] option:
+%     \usepackage[preprint]{neurips_2018}
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+     \usepackage[final]{neurips_2018}
+
+% to avoid loading the natbib package, add option nonatbib:
+%     \usepackage[nonatbib]{neurips_2018}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Reinforcement Learning}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+\author{%
+  Zhuoyuan Chen\thanks{}\\%Use footnote for providing further information
+    %about author (webpage, alternative address)---\emph{not} for acknowledging
+    %funding agencies.} \\
+  Facebook AI Research\\
+  Menlo Park, CA 94025 \\
+  \texttt{chenzhuoyuan07@gmail.com} \\
+  % examples of more authors
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \AND
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+}
+
+\begin{document}
+% \nipsfinalcopy is no longer used
+
+\maketitle
+
+\begin{abstract}
+RL: Policy Gradient, Q-Learning, actor-critic
+\end{abstract}
+
+\section{Policy Gradient}
+Reward, trajectories: $\tau$:
+\begin{equation}
+J(\theta)=\mathbb{E}_{\tau\sim p_{\theta}(\tau)}[\sum_t r(s_t, a_t)]\approx \frac{1}{N}\sum_i\sum_t r(s_{i,t}, a_{i,t})
+\end{equation}
+where
+\begin{equation*}
+J(\theta) = \int \pi_{\theta}(\tau)r(\tau)d\tau
+\end{equation*}
+Then
+\begin{equation*}
+\nabla_{\theta}J(\theta) = \int \pi_{\theta}(\tau)\nabla_{\theta}\log\pi_{\theta}(\tau) r(\tau)d\tau=\mathbb{E}_{\tau}[\nabla_{\theta}\log\pi_{\theta}(\tau)r(\tau)]
+\end{equation*}
+\begin{enumerate}
+\item Causal in $r$;
+\item Minus baseline to reduce variance, minimum variance achieved at
+\begin{equation*}
+b = \frac{\mathbb{E}[g(\tau)^2r(\tau)]}{\mathbb{E}[g(\tau)^2]}
+\end{equation*}
+\item On policy;
+\end{enumerate}
+Importance sampling:
+\begin{equation*}
+\mathbb{E}_{x\sim p(x)}[f(x)] = \mathbb{E}_{x\sim q(x)}[\frac{p(x)}{q(x)}f(x)]
+\end{equation*}
+Given a trajectory,  we have
+\begin{equation*}
+\frac{\pi_{\theta}(\tau)}{\bar{\pi}_{\theta}(\tau)}=\frac{\prod_{t=1}^T\pi_{\theta(a_t|s_t)}}{\prod_{t=1}^T\bar{\pi}_{\theta(a_t|s_t)}}
+\end{equation*}
+Then off-policy PG with IS:
+\begin{equation}
+\nabla_{\theta'}J(\theta')=\mathbb{E}_{\tau\sim\pi_{\theta}(\tau)}[\sum_{t=1}^T\nabla_{\theta'}\log\pi_{\theta'}(a_t|s_t)
+(\prod_{t'=1}^t\frac{\pi_{\theta'}(a_{t'}|s_{t'}}{\pi_{\theta}(a_{t'}|s_{t'}})
+(\sum_{t'=t}^T r(s_{t'}, a_{t'}) \prod_{t''=t}^{t'}
+\frac{\pi_{\theta'}(a_{t''}|s_{t''})}{\pi_{\theta}(a_{t''}|s_{t''})})]
+\end{equation}
+
+\subsection{TRPO}
+\begin{eqnarray*}
+J(\theta')-J(\theta)&=&J(\theta')-\mathbb{E}_{s_0\sim p(s)}[V^{\pi_{\theta}}(s_0)]\\
+&=&J(\theta')-\mathbb{E}_{\tau\sim p_{\theta'}(\tau)}[V^{\pi_{\theta}}(s_0)]\\
+&=&\mathbb{E}_{\tau\sim p_{\theta'}(\tau)}[\sum_{t=1}^{\infty}\gamma^t r(s_t, a_t)]+[\sum_{t=1}^{\infty}\gamma^t(\gamma V^{\pi_{\theta}}(s_{t+1})-V^{\pi_{\theta}}(s_t))]\\
+&=&\mathbb{E}_{\tau\sim p_{\theta'}(\tau)}[\sum_{t=1}^{\infty}\gamma^t A^{\pi_{\theta}}(s_t, a_t)]
+\end{eqnarray*}
+
+\section{Actor-Critic}
+value function, advantage:
+\begin{eqnarray*}
+Q^{\pi}(s_t, a_t)&=&\sum_{t'=t}^T \mathbb{E}_{\pi_{\theta}}[r(s_{t'}|s_t,a_t)]\\
+V^{\pi}(s_t)&=& \mathbb{E}_{a_t\sim\pi_{\theta}(a_t|s_t)}[Q^{\pi}(s_t,a_t)]\\
+A^{\pi}(s_t, a_t) &=& Q^{\pi}(s_t, a_t) - V^{\pi}(s_t)
+\end{eqnarray*}
+
+\begin{enumerate}
+\item Take action $a\sim\pi_{\theta}(a|s)$, get $(s,a,s',r)$;
+\item Update $\hat{V}_{\phi}^{\pi}$ using $r+\gamma \hat{V}(s')$
+\item Evaluate $A(s,a)=r(s,a)+\gamma\hat{V}(s')-\hat{V}(s)$
+\item PG: $\nabla_{\theta}\approx\nabla_{\theta}\log\pi(a|s)\hat{A}^{\pi}(s,a)$
+\item $\theta\leftarrow \theta +\alpha\nabla_{\theta}J(\theta)$
+\end{enumerate}
+What value should we use to multiply with $\nabla\log\pi(a_t|s_t)$?
+\begin{enumerate}
+\item low-variance, biased: $r(s,a)+\gamma V(s_{t+1})-V(s_t)$;
+\item unbiased, high-variance: $\sum_{t'}^T\gamma^{t'-t}r(s_{t'},a_{t'})-b$
+\item Eligibility traces and n-step returns: a good balance
+\begin{equation}
+\hat{A}(s_t,a_t)=\sum_{t'=t}^{t+n}\gamma^{t'-t}r(s_{t'},a_{t'})+\gamma^n\hat{V}(s_{t+n})-\hat{V}(s_t)
+\end{equation}
+\item GAE:
+\begin{equation}
+\hat{A}_{GAE}^{\pi}(s_t,a_t)=\sum_{n=1}^{\infty}w_n\hat{A}^{\pi}_n(s_t,a_t)
+\end{equation}
+with $w_n \propto\lambda^{n-1}$
+\begin{equation}
+\hat{A}_{GAE}^{\pi}(s_t,a_t)=\sum_{n=1}^{\infty}(\gamma\lambda)^{t'-t}\delta_{t'}
+\end{equation}
+\end{enumerate}
+
+\section{Value Function}
+Q-Learning:
+\begin{enumerate}
+\item Collect $(s, a, s', r)$ with some policy \textbf{($\epsilon$-greedy exploration)}, could do with \textbf{replay buffer}
+\item $y_i\leftarrow r(s_i, a_i)+\gamma\max_a Q(s',a)$
+\item $\phi\leftarrow\arg\max_{\phi'}\sum_i||Q_{\phi'}(s,a)-y||^2$
+\end{enumerate}
+Boltzmann exploration:
+\begin{equation*}
+\pi(a_t|s_t)\sim\exp(Q_{\phi}(s_t, a_t))
+\end{equation*}
+Advanced tricks:
+\begin{enumerate}
+\item Double Q-learning: another network to select $a'$:
+\begin{equation}
+y = r + \gamma Q_{\phi'}(s', \arg\max_{a'}Q_{\phi}(s', a'))
+\end{equation}
+\item Q-learning with n-steps: less-biased, typically faster learning especially early on;
+\item Continuous actions: DDPG, another network for action $a$;
+\item Prioritized experience replay;
+\item Clip gradient or Huber loss;
+\end{enumerate}
+
+\end{document}

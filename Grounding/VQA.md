@@ -27,7 +27,12 @@
 		- Vector as query, do attention, softmax, sum on CNN spatial feature;
 		- Vector produces all answers (VQA has an answer set);
 - Stanford:
-- Bottom-up and top-down attention for image captioning and visual question answering. CVPR 2018
+	- **MAC**: D Hudson, C Manning. Compositional Attention Networks for Machine Reasoning. ICLR'18
+		- MAC recurrent unit
+- Berkeley:
+	- **MCB**: A Fukui, D H Park, D Yang, A Rohrbach, T Darrell, M Rohrbach. Multimodal Compact Bilinear Pooling for VQA. EMNLP'16
+	- **NMN**: J Andreas, M Rohrbach, T Darrell, D Klein. Neural Module Networks. CVPR'16
+- **SOA**: P Anderson, X He, C Buehler, D Teney, M Johnson, S Gould, L Zhang. Bottom-up and top-down attention for image captioning and visual question answering. CVPR'18
 	- Faster RCNN + ResNet-101
 - **MUREL**. Remi Cadene, Hedi Ben-younes, Matthieu Cord, Nicolas Thome. MUREL: Multimodal Relational Reasoning for Visual Question Answering. 2019
 	- https://github.com/Cadene/murel.bootstrap.pytorch

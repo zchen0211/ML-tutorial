@@ -17,13 +17,13 @@
 			- x -> Conv1x1 (BN, ReLU) - Conv3x3 (BN, ReLU) - Conv (BN) -> out
 			- x = ReLU(x + out)
 		- Bottleneck block (downsample)
-			- x -> Conv1x1 (stride=2, BN, ReLU) - Conv3x3 (BN, ReLU) - Conv (BN) -> out
+			- x -> Conv1x1 (stride=2, BN, ReLU) - Conv3x3 (BN, ReLU) - Conv1x1 (BN) -> out
 			- x = ReLU(downsample(x) + out)
 		- Make a layer (Res1, ..., Res4)
 			- Layer (downsample) - Layer - ...
 		- Final structure:
 			- **Initial Conv**: conv1 (stride=2, BN, ReLU) - Max-Pool -> 64 x 56 x 56
-			- Res1 (64) - Res2 (112, downsample) - Res3 (256, down) - Res4 (512, down) -> 7 x 7
+			- Res1 (64) - Res2 (down 112 x 28 x 28) - Res3 (down 256 x 14 x 14, down) - Res4 (down 512 x 7 x 7)
 			- Average-pool (7x7) - fc1000
 	- **ResNext**: Aggregated Residual Transformations for Deep Neural Networks. CVPR 2017
 		- ImageNet 2nd 2016

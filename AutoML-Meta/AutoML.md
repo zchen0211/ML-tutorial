@@ -3,6 +3,18 @@
 ## A Summary
 - https://github.com/markdtw/awesome-architecture-search
 
+## FAIR
+- Saining Xie, Kaiming He. Exploring Randomly Wired Neural Networks for Image Recognition. ICCV'19
+	- Network generators: g(theta), g: residual, theta: layers, ...
+	- Randomly wired NN (ER/BA/WS)
+		- Aggregation: linear weight learned to combine
+		- Transformation: ReLU - Conv - BN;
+		- Distribution;
+		- Single input/output;
+		- Stages: progressive downsample;
+	- Experiments (ImageNet 1000, 1.28M train, 50k val):
+		- Baselines: MobileNet, ShuffleNet;
+
 ## Optimize Tensor Program
 - Auto-TVM:
 	- Tianqi Chen and Thierry Moreau and Ziheng Jiang and Lianmin Zheng and Eddie Yan. TVM: An Automated End-to-End Optimizing Compiler for Deep Learning. OSDI 2018
@@ -49,6 +61,10 @@
 - Zhong, Zhao, Yan, Junjie, and Liu, Cheng-Lin. Practical network blocks design with q-learning. AAAI, 2018.
 
 ## Evolution:
+- **The Evolved Transformer**: David R. So, Chen Liang, Quoc V. Le. The Evolved Transformer. 2019
+	- Evolutionary;
+	- PDH (progressive dynamic hurdles);
+	- WMT 2014, Eng-Deu, Eng-Fre, ..., 0.7 BLEU improvement over Transformer on Eng-Deu;
 - H Liu, K simonyan, et.al. Hierarchical representations for efficient architecture search, ICLR 2018
 - Baker, Bowen, Otkrist, Gupta, Raskar, Ramesh, and Naik, Nikhil. Accelerating neural architecture search using performance prediction. Arxiv, 1705.10823, 2017b.
 - Real, E.; Moore, S.; Selle, A.; Saxena, S.; Suematsu, Y. L.; Le, Q.; and Kurakin, A. 2017. Large-scale evolution of image classifiers. ICML 2017

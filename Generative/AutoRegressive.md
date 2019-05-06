@@ -6,3 +6,9 @@
 - **Pixel-CNN**, Aaron van den Oord, Nal Kalchbrenner, Lasse Espeholt, Oriol Vinyals, Alex Graves, et al. Conditional
 image generation with pixelcnn decoders, NIPS 2016
 - **Pixel-CNN++**, ICLR 2017
+	- Mixture of Logistic distribution;
+    - Implementation: Blind spot;
+	- UNet shortcut;
+	- PixelCNNLayer-up:
+		- u-list: 5 * gated-resnet
+		- ul-list: 5 * gated-resnet

@@ -20,6 +20,6 @@
 
 ## Compression
 - Song Han:
-	- Song Han, Jeff Pool, John Tran, and William Dally. Learning both weights and connections for efficient neural network. In NIPS, 2015.
+	- Song Han, Jeff Pool, John Tran, and William Dally. Learning both weights and connections for efficient neural network. NIPS 2015.
 	- Song Han, Xingyu Liu, Huizi Mao, Jing Pu, Ardavan Pedram, Mark A Horowitz, and William J Dally. Eie: efficient inference engine on compressed deep neural network. In Computer Architecture (ISCA), 2016 ACM/IEEE 43rd Annual International Symposium on, 2016a.
 	- Song Han, Huizi Mao, and William J Dally. Deep compression: Compressing deep neural networks with pruning, trained quantization and huffman coding. ICLR, 2016b.

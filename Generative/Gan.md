@@ -21,9 +21,12 @@
 		- D-step: loss(D)=D(fake, 1) - D(real,-1) + gradient-penalty
 		- G-step: loss(G)=D(G(fake), -1)
 - OpenAI:
-	- Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, and Xi Chen. Improved techniques for training gans. NIPS 2016
+	- T Salimans, I Goodfellow, W Zaremba, V Cheung, A Radford, and X Chen. Improved techniques for training gans. NIPS 2016
 		- **Perception Score** as evaluation
-	- Xi Chen, Yan Duan, Rein Houthooft, John Schulman, Ilya Sutskever, and Pieter Abbeel. Infogan: Interpretable representation learning by information maximizing generative adversarial nets. NIPS 2016
+	- X Chen, Y Duan, R Houthooft, J Schulman, I Sutskever, and P Abbeel. **Infogan**: Interpretable representation learning by information maximizing generative adversarial nets. NIPS 2016
+		- A Q(c|x) to encode x to attributes c, Q shared base-conv with D
+		- Discriminator: log(D(x)) + log(1-D(G(z)))
+		- Generator: log(D(G(z))) + I(c, Q(c|x))
 	- Tim Salimans, Han Zhang, Alec Radford, and Dimitris Metaxas. Improving GANs using optimal transport. In ICLR, 2018.
 - DeepMind:
 	- **BigGAN**: Andrew Brock, Jeff Donahue, Karen Simonyan. **Large Scale GAN Training for High Fidelity Natural Image Synthesis**, ICLR 2019
@@ -38,11 +41,13 @@
 		- IS: precision; FID: recall
 	- Andrew Brock, Theodore Lim, J.M. Ritchie, and Nick Weston. Neural photo editing with introspective adversarial networks. ICLR 2017.
 	- Marc G. Bellemare, Ivo Danihelka, Will Dabney, Shakir Mohamed, Balaji Lakshminarayanan, Stephan Hoyer, and Remi Munos. The Cramer distance as a solution to biased Wasserstein gradients. In arXiv preprint arXiv:1705.10743, 2017.
+- **NVIDIA**:
+	- **Progressive**: Tero Karras, Timo Aila, Samuli Laine, and Jaakko Lehtinen. Progressive growing of GANs for improved quality, stability, and variation. ICLR 2018.
 - **Condition-GAN**: Mirza, M. and Osindero, S. Conditional generative adversarial nets. arXiv preprint arXiv:1411.1784, 2014.
-- **Progressive**: Tero Karras, Timo Aila, Samuli Laine, and Jaakko Lehtinen. Progressive growing of GANs for improved quality, stability, and variation. ICLR 2018.
 - **SeqGAN**: Yu, L., Zhang, W., Wang, J., and Yu, Y. SeqGAN: Sequence generative adversarial nets with policy gradient. In AAAI, 2017.
 - Takeru Miyato and Masanori Koyama. cGANs with projection discriminator. In ICLR, 2018.
 - **SN-GAN**: Spectral Normalization for Generative Adversarial Networks, ICLR 2018
+- Wei, X., Liu, Z., Wang, L., and Gong, B. Improving the improved training of Wasserstein GANs. ICLR'18
 - **BAIR**:
 	- **Cycle-GAN**: Zhu, J.-Y., Park, T., Isola, P., and Efros, A. A. Unpaired image-to-image translation using cycle-consistent adversarial networks. CVPR 2017
 		- https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix

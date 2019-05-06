@@ -37,6 +37,27 @@
 - Y. Li, R. Bu, M. Sun, and B. Chen. PointCNN: Convolution on X -transformed points. NIPS 2018
 - Detection:
 	- **PointNet++**: Deep Hierarchical Feature Learning on Point Sets in a Metric Space, Charles R. Qi, Li Yi, Hao Su, Leonidas J. Guibas, NIPS 2017
+		- **Classification mode**: [SA module x 3] + FC_layers;
+		- SA module #1, #2: xyz, features = model(xyz, features=None), xyz: (B, 2048, 3)
+			- Gather operation (furtherest point sampling): from 2048 points, select 512 centers as new_xyz (B, 512, 3)
+			- Group-Query-MLP x 3 (with different radius)
+				- Group and Query: to (B, d, 512, nS), dim: feature dim; each 512 centers will be assigned nS=16 members
+				- Shared MLPs: with dim like [d, 32, 32, 64], output (B, 64, 512, nS), implement FC with 2D-Conv with kernel-size (1, 64)
+				- Max-pooling along last dimension (B, 64, 512)
+			- After SA-1: xyz=(B, 512, 3), feat=(B, 320, 512)
+			- After SA-2: xyz=(B, 128, 3), feat=(B, 640, 128)
+		- SA module #3:
+			- No gather operation: new_xyz=None
+			- GroupAll: (B, 643, 1, nS), 643=640+3, nS=128
+			- Shared MLPs: (B, 1024, 1)
+		- FC_layers: [1024, 512, 256, nClass]
+		- Finally a 256-dim feature
+		- **Semantic Segmentation mode**: [SA-module x3] + [FP-modules x4] + [Conv1d x2]
+		- FP-modules are used to interpolate features back;
+```python
+feat[i-1] = self.FP_modules[i](xyz[i-1], xyz[i], feat[i-1], feat[i])
+```
+		- With shape: (B, n, 3), (B, m, 3), (B, C1, n), (B, C2, m), returns (B, mlp[-1], n)
 	- **PointNet**: Charles R. Qi, Wei Liu, Chenxia Wu, Hao Su, Leonidas Guibas. Frustum PointNets for 3D Object Detection from RGB-D Data, CVPR 2018
 - **SplatNet**: H. Su, V. Jampani, D. Sun, S. Maji, E. Kalogerakis, M.-H. Yang, and J. Kautz. SplatNet: Sparse lattice networks for point cloud processing. CVPR 2018
 	- Input: point clouds and images; output semantic for each point;
@@ -53,10 +74,8 @@
 	- Given an input X, At = A(X; theta) to get basis
 	- Solve x = argmin||At x - f||^2 s.t. C(x)
 	- Update theta = theta - eta * d L(A(X, theta); f, x) / dx
-- P.-S. Wang, Y. Liu, Y.-X. Guo, C.-Y. Sun, and X. Tong. OCNN: Octree-based convolutional neural networks for 3D
-shape analysis. TOG 2017
-- Y. Wang, Y. Sun, Z. Liu, S. E. Sarma, M. M. Bronstein, and J. M. Solomon. Dynamic graph cnn for learning on point
-clouds. 2018
+- P.-S. Wang, Y. Liu, Y.-X. Guo, C.-Y. Sun, and X. Tong. OCNN: Octree-based convolutional neural networks for 3D shape analysis. TOG 2017
+- Y. Wang, Y. Sun, Z. Liu, S. E. Sarma, M. M. Bronstein, and J. M. Solomon. Dynamic graph cnn for learning on point clouds. 2018
 - X. Wang, B. Zhou, H. Fang, X. Chen, Q. Zhao, and K. Xu. Learning to group and label fine-grained shape components. SIGGRAPH Asia 2018
 - Z. Wang and F. Lu. VoxSegNet: Volumetric CNNs for semantic part segmentation of 3D shapes. 2018
 - Z. Wu, X. Wang, D. Lin, D. Lischinski, D. Cohen-Or, and H. Huang. Structure-aware generative network for 3d-shape modeling. 2018
